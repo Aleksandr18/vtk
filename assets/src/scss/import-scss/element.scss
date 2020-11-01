@@ -1,0 +1,259 @@
+header {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  height: 80px;
+}
+
+.block {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  width: 100%;
+
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    background-image: linear-gradient(to right, #0b2a30, transparent, #0b2a30);
+    opacity: 1;
+    z-index: 2;
+  }
+
+}
+
+.adv {
+  transform: scaleX(-1);
+
+  &:first-child {
+    position: absolute;
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    transform: scaleX(1);
+    position: absolute;
+    z-index: 2;
+    right: 30%;
+  }
+
+  &:nth-child(3) {
+    position: absolute;
+    right: -14%;
+  }
+}
+
+.headS {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.travelImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.travel {
+  max-width: 630px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.travelHeader {
+  color: #f63219;
+  text-shadow: 3px 1px #fff;
+  font-size: 34px;
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.travelText {
+  color: #999999;
+  text-shadow: 3px 1px #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-family: 'Lobster', cursive;
+}
+
+.travelLink {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  padding-top: 15%;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    background-image: linear-gradient(to right, #fff, transparent, #fff);
+  }
+}
+
+.otLink {
+  color: #01a2d9;
+  text-shadow: none;
+  position: relative;
+
+  &:after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    padding: 8.5px;
+    background-image: url("/assets/img/circle.png");
+    bottom: 0;
+  }
+
+}
+
+.versionLink {
+  color: #000;
+  margin-right: 21px;
+
+  &:before {
+    content: "";
+    background-image: url("../img/glasses.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding: 0 13.5px;
+    margin-right: 8px;
+  }
+}
+
+.sign {
+  color: #01a2d9;
+  &:before {
+    content: "";
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding: 0 10px;
+    margin-right: 21px;
+  }
+}
+
+.headL {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    background-image: url("../img/mapIcon.png");
+    padding: 16px;
+  }
+}
+
+.city {
+  color: #999999;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 75px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 21px;
+}
+
+.menuToggle {
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: 15px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+
+  .burger {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+
+    &:checked ~ {
+      .burgerLine {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+
+        &:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:nth-last-child(2) {
+          opacity: 1;
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+      }
+
+      .menu {
+        transform: none;
+      }
+    }
+  }
+
+  .burgerLine {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #fff;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+  }
+
+  .burgerLine {
+    &:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    &:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+  }
+
+}
