@@ -121,7 +121,7 @@
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
             </div>
-            <div class="middle col-xl-7">
+            <div class="middle col-xl-6">
                 <div class="cal d-flex justify-content-between">
                     <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
@@ -255,7 +255,98 @@
 
                 </div>
             </div>
-            <div class="right col-xl-2">
+            <div class="right col-xl-3">
+                <h2 class="title blockTitle">Прямой эфир</h2>
+<!--                <a class="videoLink" href="/">заказать видео</a>-->
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="recording">
+                    <a class="recordingAlllink" href="/">все сообщения</a>
+                </div>
+                <div class="busImg">
+                    <img class="busImgImg" src="/assets/img/bus.png" alt="">
+                    <img class="busImgImg bus2" src="/assets/img/bus.png" alt="">
+                </div>
+
+                <h2 class="title blockTitle">Комментируемое</h2>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="advBlock">
+                    <p class="userName">Вадим Исаков</p>
+                    <a class="recordingLink" href="/">США госсекретарь Джон Керри
+                        заявил во вторник, что Йемен
+                        Хути группы 's и саудовский</a>
+                    <a class="advLink" href="/">Реклама</a>
+                </div>
+                <div class="recording">
+                    <a class="recordingAlllink" href="/">все сообщения</a>
+                </div>
+                <div class="present">
+                    <p>Получай</p>
+                    <img class="presentImg" src="/assets/img/present.jpg" alt="">
+                    <h2>Бонусы</h2>
+                    <p>за регистрацию</p>
+                </div>
+
             </div>
         </div>
     </div>
