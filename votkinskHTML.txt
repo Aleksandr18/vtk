@@ -120,6 +120,101 @@
                 <div class="recording">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
+                <img src="/assets/img/term.jpg" alt="">
+                <h2 class="title blockTitle">Выбор редакции</h2>
+                <div class="recording">
+                    <time>12:35</time>
+                    <a class="recordingLink" href="/">США госсекретарь Джон
+                        Керри заявил во вторник,
+                        что Йемен Хути группы 's
+                        и саудовский</a>
+                </div>
+                <div class="recording">
+                    <time>12:35</time>
+                    <a class="recordingLink" href="/">США госсекретарь Джон
+                        Керри заявил во вторник,
+                        что Йемен Хути группы 's
+                        и саудовский</a>
+                </div>
+                <div class="recording">
+                    <time>12:35</time>
+                    <a class="recordingLink" href="/">США госсекретарь Джон
+                        Керри заявил во вторник,
+                        что Йемен Хути группы 's
+                        и саудовский</a>
+                </div>
+                <div class="recording">
+                    <time>12:35</time>
+                    <a class="recordingLink" href="/">США госсекретарь Джон
+                        Керри заявил во вторник,
+                        что Йемен Хути группы 's
+                        и саудовский</a>
+                </div>
+                <div class="recording">
+                    <time>12:35</time>
+                    <a class="recordingLink" href="/">США госсекретарь Джон
+                        Керри заявил во вторник,
+                        что Йемен Хути группы 's
+                        и саудовский</a>
+                </div>
+                <div class="recording">
+                    <a class="recordingAlllink" href="/">все новости редакции</a>
+                </div>
+                <div class="advP">
+                    <img class="advImg" src="/assets/img/wms.jpg" alt="">
+                </div>
+                <div class="hearing">
+                    <div class="hearingImg">
+                        <img src="/assets/img/ear.png" alt="">
+                    </div>
+                    <div class="hearingContent">
+                        <a class="close hearingClose" href="/"></a>
+                        <h4 class="yanTitle">Я слышал, что...</h4>
+                        <p>Подросткам продают пиво!
+                            В магазине "БАСКО" ул.1 Мая 83
+                            подросткам продают пиво, сегодня
+                            19.11.2016 в 17.45.</p>
+                        <a class="recordingAlllink" href="/">Разместить слух</a>
+                        <a class="recordingAlllink" href="/">Все слухи</a>
+                    </div>
+                </div>
+
+                <h2 class="title blockTitle">Новости партнеров</h2>
+                <div class="recording">
+                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                    <a class="recordingLink" href="/">Керри объявляет Йемен
+                        о прекращении огня
+                        на возражения</a>
+                </div>
+                <div class="recording">
+                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                    <a class="recordingLink" href="/">Керри объявляет Йемен
+                        о прекращении огня
+                        на возражения</a>
+                </div>
+                <div class="recording">
+                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                    <a class="recordingLink" href="/">Керри объявляет Йемен
+                        о прекращении огня
+                        на возражения</a>
+                </div>
+                <div class="recording">
+                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                    <a class="recordingLink" href="/">Керри объявляет Йемен
+                        о прекращении огня
+                        на возражения</a>
+                </div>
+                <div class="recording">
+                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                    <a class="recordingLink" href="/">Керри объявляет Йемен
+                        о прекращении огня
+                        на возражения</a>
+                </div>
+
+
+                <div class="recording">
+                    <a class="recordingAlllink" href="/">еще новости партнеров</a>
+                </div>
             </div>
             <div class="middle col-xl-6">
                 <div class="cal d-flex justify-content-between">
@@ -254,10 +349,122 @@
                     <button type="button" class="load">загрузить еще</button>
 
                 </div>
+                <img class="advBanner" src="/assets/img/banner1.png" alt="">
+                <h2 class="title blockTitle">Интересное</h2>
+                <div class="recordingInt">
+                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                    <div>
+                        <a class="recordingLink intLink" href="/">Керри объявляет Йемен о прекращении огня на возражения
+                            правительства США госсекретарь Джон Керри заявил во вторник,
+                            что Йемен Хути группы 's</a>
+                        <div class="newsImgStats statInt">
+                            <div class="newsStatEye">
+                                <span class="IntIcon eye">93</span>
+                            </div>
+                            <div class="newsStatComm">
+                                <span class="IntIcon comm">26</span>
+                            </div>
+                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recordingInt">
+                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                    <div>
+                        <a class="recordingLink intLink" href="/">Керри объявляет Йемен о прекращении огня на возражения
+                            правительства США госсекретарь Джон Керри заявил во вторник,
+                            что Йемен Хути группы 's</a>
+                        <div class="newsImgStats statInt">
+                            <div class="newsStatEye">
+                                <span class="IntIcon eye">93</span>
+                            </div>
+                            <div class="newsStatComm">
+                                <span class="IntIcon comm">26</span>
+                            </div>
+                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recordingInt">
+                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                    <div>
+                        <a class="recordingLink intLink" href="/">Керри объявляет Йемен о прекращении огня на возражения
+                            правительства США госсекретарь Джон Керри заявил во вторник,
+                            что Йемен Хути группы 's</a>
+                        <div class="newsImgStats statInt">
+                            <div class="newsStatEye">
+                                <span class="IntIcon eye">93</span>
+                            </div>
+                            <div class="newsStatComm">
+                                <span class="IntIcon comm">26</span>
+                            </div>
+                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recordingInt">
+                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                    <div>
+                        <a class="recordingLink intLink" href="/">Керри объявляет Йемен о прекращении огня на возражения
+                            правительства США госсекретарь Джон Керри заявил во вторник,
+                            что Йемен Хути группы 's</a>
+                        <div class="newsImgStats statInt">
+                            <div class="newsStatEye">
+                                <span class="IntIcon eye">93</span>
+                            </div>
+                            <div class="newsStatComm">
+                                <span class="IntIcon comm">26</span>
+                            </div>
+                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recordingInt">
+                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                    <div>
+                        <a class="recordingLink intLink" href="/">Керри объявляет Йемен о прекращении огня на возражения
+                            правительства США госсекретарь Джон Керри заявил во вторник,
+                            что Йемен Хути группы 's</a>
+                        <div class="newsImgStats statInt">
+                            <div class="newsStatEye">
+                                <span class="IntIcon eye">93</span>
+                            </div>
+                            <div class="newsStatComm">
+                                <span class="IntIcon comm">26</span>
+                            </div>
+                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recordingInt">
+                    <button>загрузить еще</button>
+                </div>
+
+                <div class="owlParent">
+                    <div class="owl-people owl-carousel">
+                        <div class="peopleStruct">
+                            <div class="peopleInfo">
+                                <!-- <h2 class="owlTitle title">Наши люди</h2> -->
+                                <img class="peopleImg" src="assets/img/people1.jpg" alt="">
+                                <div>
+                                    <h3 class="title peopleTitle">Юрий Бычков</h3>
+                                    <p class="peopleText">Депутат ГосСовета Юрий Бычков отвечает
+                                        на вопросы горожан в программе
+                                        «Юрий Бычков отвечает».</p>
+                                    <a class="peopleLink" href="/">узнать больше</a>
+                                    <a class="peopleLink" href="/">узнать от других</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="right col-xl-3">
-                <h2 class="title blockTitle">Прямой эфир</h2>
-<!--                <a class="videoLink" href="/">заказать видео</a>-->
+                <div class="rightTitle">
+                    <h2 class="title rightT">Прямой эфир</h2>
+                    <a class="videoLink" href="/">заказать видео</a>
+                </div>
                 <div class="advBlock">
                     <p class="userName">Вадим Исаков</p>
                     <a class="recordingLink" href="/">США госсекретарь Джон Керри
@@ -341,16 +548,91 @@
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="present">
-                    <p>Получай</p>
-                    <img class="presentImg" src="/assets/img/present.jpg" alt="">
-                    <h2>Бонусы</h2>
-                    <p>за регистрацию</p>
+                    <div class="presentParent">
+                        <p class="presentText">получай</p>
+                        <img class="presentImg" src="/assets/img/present.jpg" alt="">
+                    </div>
+                    <h2 class="presentTitle">Бонусы</h2>
+                    <p class="presentText textReg">за регистрацию</p>
+                    <button class="presentBtn">Узнать как</button>
                 </div>
 
             </div>
         </div>
     </div>
 </div>
+
+<div class="yan">
+    <div class="container">
+        <div class="blocks d-flex">
+            <div class="left col-xl-3"></div>
+
+            <div class="yanContent col-xl-9 d-flex">
+                <h4 class="yanTitle">Яндекс.Директ</h4>
+                <a class="close" href="/"></a>
+
+                <div class="yanText">
+                    <p>Горячие столы!</p>
+                    <p>Столы оптом и в розницу.</p>
+                    <p>Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                </div>
+                <div class="yanText">
+                    <p>Горячие столы!</p>
+                    <p>Столы оптом и в розницу.</p>
+                    <p>Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                </div>
+                <div class="yanText">
+                    <p>Горячие столы!</p>
+                    <p>Столы оптом и в розницу.</p>
+                    <p>Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                </div>
+                <div class="yanText">
+                    <p>Горячие столы!</p>
+                    <p>Столы оптом и в розницу.</p>
+                    <p>Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="blocks d-flex">
+            <div class="left col-xl-3"></div>
+            <div class="footerContent col-xl-9 d-flex">
+                <div class="footerText">
+                    <p>Воткинск.NET - информационно-развлекательный портал
+                        Размещение рекламы круглосуточно: +7 (912) 441-01-25 | +7 (34145) 5-99-75
+                        Портал не несет ответственности за достоверность информации,
+                        содержащейся в рекламных объявлениях.
+                        Портал не предоставляет справочной информации.
+                    </p>
+                </div>
+                <div class="footerImg">
+                    <img src="/assets/img/footerImg.png" alt="">
+                </div>
+
+                <div class="footerLinks">
+                    <a class="footerLink" href="/">О портале</a>
+                    <a class="footerLink" href="/">Реклама</a>
+                    <a class="footerLink" href="/">Вакансии</a>
+                    <a class="footerLink mobIcon" href="/">Мобильная версия</a>
+                </div>
+                <div class="footerText footerRight">
+                    <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
+                        Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
+                        Агенство креативных профессионалов</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -369,3 +651,147 @@
 
 </body>
 </html>
+
+SCRIPT
+
+$(document).ready(function () {
+
+
+    const menuBtn = document.querySelector('.menu-btn');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+        if (!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+        }
+    });
+
+    const menuBtnBurger = document.querySelector('.menu-btn__burger');
+
+    $('.owl-people').owlCarousel({
+        loop: true,
+        autoplay: false,
+        margin: 24,
+        nav: true,
+        autoWidth: true,
+        responsiveClass: true,
+    });
+
+});
+
+
+VARIABLES 
+
+/* + site */
+$time:0.5s;
+$opacity:0.8;
+/* - site */
+
+$white:#ffffff;
+$light-gray:#F4F4F4;
+$gray-100: #DDDDDD !default;
+$gray-200: #F9F9F9 !default;
+
+$gray-300:  rgb(233, 233, 233) !default;  // border
+$gray-400: #E4E4E4 !default;
+$gray-600: #8d8d8d !default; // secondary
+$gray-700: #8E8E8E;
+$gray-750: #7d7d7d !default;
+$gray-800: #626262 !default;
+//$gray-800: #3D4146 !default;
+//$gray-900: #1A1C1D !default;
+$black:#000000;
+$orange-active:#D17A39;
+$blue: #01a2d9;
+$dark-blue: #0190a1;
+$orange:  #F47B20 !default;
+$orange-light: #f3924a;
+$orange-hover: #F9B684;
+$red:#ff6060;
+$green: #34a35e;
+$gradient: linear-gradient(180deg, #F47B20 0%, #F05600 100%);
+$bgGray: #E8E8E8;
+$defaultColor: #333333;
+$navColor: #666666;
+$line: #d5d5d5;
+$newsColorRed: #f63219;
+$newsColorOrange: #ff9900;
+$carouselColor: #f3f3f3;
+$footerColor: #151515;
+$footerText: #575757;
+
+/* + fonts */
+//$body-bg: #ededed !default;
+$body-color: $black;
+$font-size-base:0.875rem;
+//$line-height-base:1.5;
+$link-hover-color: $orange;
+$ff-bold: 'Magrit-Bold';
+$ff-light: 'Magrit-Regular';
+$primary:       $orange !default;
+$secondary:     $light-gray !default;
+$font-family-base: $ff-light;
+$defaultFont: 'Open Sans', sans-serif;
+$chillFont: 'Lobster', cursive;
+/* - fonts */
+
+/* + link */
+$link-color:$black;
+$link-hover-color:$orange;
+/* - link */
+$container-max-widths: (
+        sm: 575px,
+        md: 800px,
+        lg: 1024px,
+        xl: 1170px
+);
+/* + btn */
+$btn-padding-y:0.625rem;
+$btn-padding-x:1.5rem;
+$btn-font-family:$font-family-base;
+$btn-font-size:1rem;
+$btn-line-height:1.125rem;
+$btn-border-radius:30px;
+$btn-active-box-shadow:0;
+$btn-disabled-opacity:1;
+
+$btn-padding-y-sm:     0.375rem;
+$btn-padding-x-sm:     1.25rem;
+$btn-font-size-sm:     0.875rem;
+$btn-line-height-sm:   1rem;
+$btn-border-radius-sm: 30px;
+
+/* - btn */
+
+/* + input */
+$input-padding-y:0;
+$input-padding-x:1.25rem;
+$input-font-family:$font-family-base;
+$input-font-size:1rem;
+$input-height:2.5rem;
+$input-focus-box-shadow:0;
+$input-border-color:transparent;
+
+$input-placeholder-color:$black;
+$input-color:$black;
+$input-border-width:2px;
+$input-border-radius:30px;
+$input-focus-border-color:$black;
+$input-bg:$white;
+
+
+/* -input */
+
+/* + checkbox */
+//$custom-checkbox-indicator-border-radius:3px;
+//$custom-checkbox-indicator-icon-checked:  url("../img/check-black.svg");
+/* - checkbox */
+
+/* modal */
+//$modal-md:                          542px !default;
+//$modal-backdrop-bg:                 #222 !default;
+//$modal-backdrop-opacity:            .8 !default;
+/* - modal */
