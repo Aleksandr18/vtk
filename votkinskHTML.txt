@@ -21,7 +21,7 @@
 <body>
 
 <header>
-    <div class="block" href="/">
+    <div class="block">
         <img class="adv" src="/assets/img/advCar.png" alt="">
         <img class="adv" src="/assets/img/advCar.png" alt="">
         <img class="adv" src="/assets/img/advCar.png" alt="">
@@ -37,21 +37,21 @@
                     <img class="travelImg" src="/assets/img/otdix_1_01.jpg" alt="">
                 </a>
                 <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
-                <p class="travelText">Ранее бронирование только у нас! <a class="otLink" href="/">подробнее</a></p>
+                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
             </div>
-            <a class="versionLink" href="/">Версия для слабовидящих</a>
-            <a class="sign" href="/">Вход</a>
+            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
+            <a class="versionLink sign search" href="/">Вход</a>
         </div>
     </div>
 </div>
 
 <div class="headL d-flex align-items-center">
     <div class="container con">
-        <div class="cityParent">
+        <div class="cityParent map col-xl-3">
             <h2 class="title titleCity">Воткинск</h2>
             <a class="cityLink" href="">Выбрать другой город</a>
         </div>
-        <nav>
+        <nav class="nav col-xl-6">
             <ul class="menu">
                 <li><a class="link" href="/">Новости</a></li>
                 <li><a class="link" href="/">Объявления</a></li>
@@ -67,11 +67,10 @@
                 </div>
             </div>
         </nav>
-
-        <div class="curseParent">
-            <p class="curseValue">64.37</p>
-            <p class="curseValue">68.37</p>
-            <p class="curseValue">47.37</p>
+        <div class="curseParent col-xl-3">
+            <p class="curseValue doll arrowDown">64.37</p>
+            <p class="curseValue eu arrowDown">68.37</p>
+            <p class="curseValue neft arrowTop">47.37</p>
         </div>
 
     </div>
@@ -85,7 +84,7 @@
                     <h2 class="title">Новые записи в блогах</h2>
                 </div>
                 <div class="blockParent">
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -93,28 +92,28 @@
                             и саудовский...</p>
                         <a href="/"></a>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -122,44 +121,44 @@
                             и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex pl-0">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
-                <img src="/assets/img/term.jpg" alt="">
+                <img class="advImg" src="/assets/img/term.jpg" alt="">
                 <div class="rightTitle">
                     <h2 class="title">Выбор редакции</h2>
                 </div>
 
                 <div class="blockParent">
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording">
+                    <div class="recording d-flex">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -167,7 +166,7 @@
                             и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex pl-0">
                     <a class="recordingAlllink" href="/">все новости редакции</a>
                 </div>
                 <div class="advP">
@@ -192,31 +191,31 @@
                 <div class="rightTitle">
                     <h2 class="title">Новости партнеров</h2>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
@@ -224,7 +223,7 @@
                 </div>
 
 
-                <div class="recording">
+                <div class="recording d-flex pl-0">
                     <a class="recordingAlllink" href="/">еще новости партнеров</a>
                 </div>
             </div>
@@ -232,7 +231,7 @@
                 <div class="cal d-flex justify-content-between">
                     <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
-                    <a class="chillLink" href="/">хочу отдохнуть</a>
+                    <a class="chillLink pal" href="/">хочу отдохнуть</a>
                 </div>
                 <div class="rad">
                     <input type="checkbox" id="1"><label for="1">все</label>
@@ -490,45 +489,45 @@
             <div class="right col-xl-3">
                 <div class="rightTitle">
                     <h2 class="title rightT">Прямой эфир</h2>
-                    <a class="videoLink" href="/">заказать видео</a>
+                    <a class="videoLink chillLink  camera" href="/">заказать видео</a>
                 </div>
                 <div class="blockParent advParent">
-                    <div class="advBlock">
+                    <div class="recording lineLeft flex-wrap">
                         <p class="userName">Вадим Исаков</p>
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
                         <a class="advLink" href="/">Реклама</a>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
                         <a class="advLink" href="/">Реклама</a>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
 
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
                         <a class="advLink" href="/">Реклама</a>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="busImg">
@@ -540,7 +539,7 @@
                     <h2 class="title">Комментируемое</h2>
                 </div>
                 <div class="blockParent advComm">
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
@@ -553,7 +552,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
 
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
@@ -567,7 +566,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
@@ -580,7 +579,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
@@ -593,7 +592,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="advBlock">
+                    <div class="recording lineLeft">
                         <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
@@ -607,10 +606,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="recording">
+                <div class="recording d-flex pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
-                <div class="present">
+                <div class="present float-left">
                     <div class="presentParent">
                         <p class="presentText">получай</p>
                         <img class="presentImg" src="/assets/img/present.jpg" alt="">
@@ -630,7 +629,7 @@
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-9 d-flex">
+            <div class="yanContent col-xl-10 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
@@ -667,35 +666,61 @@
     <div class="container">
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
-            <div class="footerContent col-xl-9 d-flex">
-                <div class="footerText">
-                    <p>Воткинск.NET - информационно-развлекательный портал
-                        Размещение рекламы круглосуточно: +7 (912) 441-01-25 | +7 (34145) 5-99-75
-                        Портал не несет ответственности за достоверность информации,
-                        содержащейся в рекламных объявлениях.
-                        Портал не предоставляет справочной информации.
-                    </p>
-                </div>
-                <div class="footerImg">
-                    <img src="/assets/img/footerImg.png" alt="">
+            <div class="footerContent col-xl-10 d-flex">
+                <div class="footerLinksParent pt-0">
+                    <div class="footerText">
+                        <p>Воткинск.NET - информационно-развлекательный портал
+                            Размещение рекламы круглосуточно: +7 (912) 441-01-25 | +7 (34145) 5-99-75
+                            Портал не несет ответственности за достоверность информации,
+                            содержащейся в рекламных объявлениях.
+                            Портал не предоставляет справочной информации.
+                        </p>
+                    </div>
+                    <div class="footerImg">
+
+                        <img src="/assets/img/footerImg.png" alt="">
+                    </div>
                 </div>
 
-                <div class="footerIcons">
-                    <a class="footerFacebook" href="/">
-                        <img src="/assets/img/facebook.png" alt="">
-                    </a>
-                </div>
 
-                <div class="footerLinks">
-                    <a class="footerLink" href="/">О портале</a>
-                    <a class="footerLink" href="/">Реклама</a>
-                    <a class="footerLink" href="/">Вакансии</a>
-                    <a class="footerLink mobIcon" href="/">Мобильная версия</a>
-                </div>
-                <div class="footerText footerRight">
-                    <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
-                        Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
-                        Агенство креативных профессионалов</p>
+                <div class="footerLinksParent">
+                    <div class="footerIconsParent w-50">
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/facebook.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/twitter.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/vk.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/od.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/youtube.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/inst.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/chell.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/google+.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footerText footerRight w-50">
+                        <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
+                            Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
+                            Агенство креативных профессионалов</p>
+                    </div>
+                    <div class="footerLinks w-50">
+                        <a class="footerLink" href="/">О портале</a>
+                        <a class="footerLink" href="/">Реклама</a>
+                        <a class="footerLink" href="/">Вакансии</a>
+                        <a class="footerLink mobIcon" href="/">Мобильная версия</a>
+                    </div>
                 </div>
 
             </div>
