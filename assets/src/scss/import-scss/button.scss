@@ -1,0 +1,26 @@
+
+button {
+  background-color: transparent;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid $line;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 6.5px 17.5px;
+  color: $navColor;
+}
+
+.presentBtn {
+  border: 1px solid $blue;
+  color: $blue;
+  padding: 6.5px 29.5px;
+}
+
+.newsBtn {
+  font-size: 15px;
+  background-color: $blue;
+  color: $white;
+}
+
+
+

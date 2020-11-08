@@ -1,3 +1,7 @@
+
+
+
+
 /* + site */
 $time:0.5s;
 $opacity:0.8;
@@ -7,14 +11,6 @@ $white:#ffffff;
 $light-gray:#F4F4F4;
 $gray-100: #DDDDDD !default;
 $gray-200: #F9F9F9 !default;
-$footerColor: #0E1D28;
-$link: #006DFE;
-$white: #fff;
-$black: #000;
-$backgroundBtn: #1B7DFF;
-$body-color: #F2F2F2;
-$line: #006DFE;
-$block: #E8E8E8;
 
 $gray-300:  rgb(233, 233, 233) !default;  // border
 $gray-400: #E4E4E4 !default;
@@ -24,9 +20,9 @@ $gray-750: #7d7d7d !default;
 $gray-800: #626262 !default;
 //$gray-800: #3D4146 !default;
 //$gray-900: #1A1C1D !default;
-$black: #000000;
+$black:#000000;
 $orange-active:#D17A39;
-$blue: #00a6ba;
+$blue: #01a2d9;
 $dark-blue: #0190a1;
 $orange:  #F47B20 !default;
 $orange-light: #f3924a;
@@ -34,6 +30,19 @@ $orange-hover: #F9B684;
 $red:#ff6060;
 $green: #34a35e;
 $gradient: linear-gradient(180deg, #F47B20 0%, #F05600 100%);
+$bgGray: #E8E8E8;
+
+$defaultColor: #333333;
+$navColor: #666666;
+$labelColor: #999;
+$line: #d5d5d5;
+$newsColorRed: #f63219;
+$newsColorOrange: #ff9900;
+$carouselColor: #f3f3f3;
+$footerColor: #151515;
+$footerText: #575757;
+$scrollColor: #bebebe;
+$owlColor: #131313;
 
 /* + fonts */
 //$body-bg: #ededed !default;
@@ -46,6 +55,8 @@ $ff-light: 'Magrit-Regular';
 $primary:       $orange !default;
 $secondary:     $light-gray !default;
 $font-family-base: $ff-light;
+$defaultFont: 'Open Sans', sans-serif;
+$chillFont: 'Lobster', cursive;
 /* - fonts */
 
 /* + link */
