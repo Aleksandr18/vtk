@@ -12,46 +12,33 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
           integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
           crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
+          onload="this.rel='stylesheet'" as="style">
+
+    <link rel="stylesheet" rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+          onload="this.rel='stylesheet'" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Votkinsk</title>
 </head>
 <body>
 
-<header>
-    <div class="block">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-    </div>
-</header>
+<?php
+include "include/header.php"
 
-<div class="headS d-flex">
-    <div class="container">
-        <div class="headContent d-flex align-items-center  justify-content-between">
-            <p>Логотип</p>
-            <div class="travel">
-                <a class="travelLink" href="">
-                    <img class="travelImg" src="/assets/img/otdix_1_01.jpg" alt="">
-                </a>
-                <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
-                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
-            </div>
-            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
-            <a class="versionLink sign search" href="/">Вход</a>
-        </div>
-    </div>
-</div>
+?>
 
-<div class="headL d-flex align-items-center">
+
+
+<div class="headL d-flex align-items-center position-relative">
     <div class="container con">
-        <div class="cityParent map col-xl-3">
+        <div class="cityParent map col-xl-3 col-lg-3 col-md-4">
             <h2 class="title titleCity">Воткинск</h2>
             <a class="cityLink" href="">Выбрать другой город</a>
         </div>
-        <nav class="nav col-xl-6">
+        <nav class="nav col-xl-6 col-lg-6 col-md-8">
             <ul class="menu">
                 <li><a class="link" href="/">Новости</a></li>
                 <li><a class="link" href="/">Объявления</a></li>
@@ -63,16 +50,32 @@
                 <li><a class="link" href="/">Еще</a></li>
             </ul>
             <div class="menu-btn">
-                <div class="menu-btn__burger">
-                </div>
+                <div class="menu-btn__burger"></div>
             </div>
         </nav>
-        <div class="curseParent col-xl-3">
+        <div class="curseParent col-xl-3 col-lg-3">
             <p class="curseValue doll arrowDown">64.37</p>
             <p class="curseValue eu arrowDown">68.37</p>
             <p class="curseValue neft arrowTop">47.37</p>
         </div>
 
+        <div class="hidden">
+            <div class="hiddenHeader d-flex col-xl-6 align-items-center">
+                <a href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
+                <div class="hiddenTel">
+                    <a href="/">+7 (912) 441-01-25</a>
+                    <a href="/">+7 (34145) 5-99-75</a>
+                </div>
+                <a href="/">Меню сайта</a>
+
+            </div>
+
+            <div class="blocks">
+                <div class="left col-xl-3"></div>
+                <div class="middle col-xl-6"></div>
+                <div class="right col-xl-3"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -84,7 +87,7 @@
                     <h2 class="title">Новые записи в блогах</h2>
                 </div>
                 <div class="blockParent">
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -92,28 +95,28 @@
                             и саудовский...</p>
                         <a href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -121,7 +124,7 @@
                             и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
                 <img class="advImg" src="/assets/img/term.jpg" alt="">
@@ -130,35 +133,35 @@
                 </div>
 
                 <div class="blockParent">
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
@@ -166,7 +169,7 @@
                             и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все новости редакции</a>
                 </div>
                 <div class="advP">
@@ -191,31 +194,31 @@
                 <div class="rightTitle">
                     <h2 class="title">Новости партнеров</h2>
                 </div>
-                <div class="recording d-flex">
+                <div class="recording">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording d-flex">
+                <div class="recording">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording d-flex">
+                <div class="recording">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording d-flex">
+                <div class="recording">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
                         на возражения</p>
                 </div>
-                <div class="recording d-flex">
+                <div class="recording">
                     <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                     <p class="recordingLink">Керри объявляет Йемен
                         о прекращении огня
@@ -223,7 +226,7 @@
                 </div>
 
 
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">еще новости партнеров</a>
                 </div>
             </div>
@@ -231,7 +234,7 @@
                 <div class="cal d-flex justify-content-between">
                     <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
-                    <a class="chillLink pal" href="/">хочу отдохнуть</a>
+                    <button type="button" class="chillLink pal">хочу отдохнуть</button>
                 </div>
                 <div class="rad">
                     <input type="checkbox" id="1"><label for="1">все</label>
@@ -288,7 +291,8 @@
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
-                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути группы
+                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути
+                            группы
                             's</p>
                     </div>
                     <div class="newsBlock">
@@ -298,7 +302,8 @@
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
-                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути группы
+                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути
+                            группы
                             's</p>
                     </div>
 
@@ -356,7 +361,8 @@
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
-                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути группы
+                        <p class="newsBlockText">США госсекретарь Джон Керри заявил во вторник, что Йемен Хути
+                            группы
                             's</p>
                     </div>
                     <div class="newsBlock">
@@ -369,7 +375,7 @@
                         <p class="newsBlockText">США госсекретарь Джон Керри заявил</p>
                     </div>
 
-                    <div class="recordingInt line recordBtn">
+                    <div class="recordingInt d-flex line recordBtn">
                         <button type="button" class="load">загрузить еще</button>
                     </div>
                 </div>
@@ -462,7 +468,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="recordingInt line">
+                <div class="recordingInt d-flex line">
                     <button type="button">загрузить еще</button>
                 </div>
 
@@ -489,7 +495,7 @@
             <div class="right col-xl-3">
                 <div class="rightTitle">
                     <h2 class="title rightT">Прямой эфир</h2>
-                    <a class="videoLink chillLink  camera" href="/">заказать видео</a>
+                    <button type="button" class="videoLink chillLink  camera">заказать видео</button>
                 </div>
                 <div class="blockParent advParent">
                     <div class="recording lineLeft flex-wrap">
@@ -527,7 +533,7 @@
                             Хути группы 's и саудовский...</p>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="busImg">
@@ -606,7 +612,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="present float-left">
@@ -629,7 +635,7 @@
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-10 d-flex">
+            <div class="yanContent col-xl-9 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
@@ -662,11 +668,37 @@
     </div>
 </div>
 
+<?php
+include "include/footer.php"
+?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
 <footer>
     <div class="container">
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
-            <div class="footerContent col-xl-10 d-flex">
+            <div class="footerContent col-xl-9 d-flex">
                 <div class="footerLinksParent pt-0">
                     <div class="footerText">
                         <p>Воткинск.NET - информационно-развлекательный портал
@@ -676,15 +708,15 @@
                             Портал не предоставляет справочной информации.
                         </p>
                     </div>
-                    <div class="footerImg">
+                    <div class="footerImgParent">
 
-                        <img src="/assets/img/footerImg.png" alt="">
+                        <img class="footerImg" src="/assets/img/footerImg.png" alt="">
                     </div>
                 </div>
 
 
                 <div class="footerLinksParent">
-                    <div class="footerIconsParent w-50">
+                    <div class="footerIconsParent">
                         <a class="footerIcons" href="/">
                             <img src="/assets/img/facebook.png" alt="">
                         </a>
@@ -710,12 +742,12 @@
                             <img src="/assets/img/google+.png" alt="">
                         </a>
                     </div>
-                    <div class="footerText footerRight w-50">
+                    <div class="footerText footerRight">
                         <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
                             Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
                             Агенство креативных профессионалов</p>
                     </div>
-                    <div class="footerLinks w-50">
+                    <div class="footerLinks">
                         <a class="footerLink" href="/">О портале</a>
                         <a class="footerLink" href="/">Реклама</a>
                         <a class="footerLink" href="/">Вакансии</a>
@@ -728,20 +760,35 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
 
-</body>
-</html>
+
+
+
+
+
+
+<header>
+    <div class="block">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+    </div>
+</header>
+
+<div class="headS d-flex">
+    <div class="container">
+        <div class="headContent d-flex align-items-center  justify-content-between">
+            <p>Логотип</p>
+            <div class="travel">
+                <a class="travelLink" href="">
+                    <img class="travelImg" src="/assets/img/otdix_1_01.jpg" alt="">
+                </a>
+                <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
+                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
+            </div>
+            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
+            <a class="versionLink sign search" href="/">Вход</a>
+        </div>
+    </div>
+</div>
+
