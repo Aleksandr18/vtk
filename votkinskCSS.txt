@@ -299,6 +299,7 @@ header {
   max-height: 575px;
   overflow: hidden;
   overflow-y: auto;
+  color: $navColor;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -518,6 +519,7 @@ input:checked + label:before {
   margin-right: 24px;
   margin-bottom: 15px;
   width: calc(50% - 12px);
+  font-family: $tahomaFont;
 
   &:nth-child(2n) {
     margin-right: 0;
@@ -526,6 +528,11 @@ input:checked + label:before {
   @media (max-width: 760px) {
     width: 100%;
     margin-right: 0;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 }
 
@@ -588,10 +595,6 @@ input:checked + label:before {
   color: $white;
 }
 
-.newsBlockTitle {
-  font-size: 14px !important;
-}
-
 .newsBlockText {
   font-size: 14px;
 }
@@ -611,7 +614,10 @@ input:checked + label:before {
 
 .advBanner {
   width: 100%;
+}
 
+.blockInt {
+  max-height: 610px;
 }
 
 .recordingInt {
@@ -624,6 +630,10 @@ input:checked + label:before {
 
   @media (max-width: 540px) {
     display: block;
+  }
+
+  .recordingLink {
+    margin-bottom: 9px;
   }
 }
 
@@ -697,7 +707,7 @@ input:checked + label:before {
 
 .peopleText {
   font-size: 15px;
-
+  padding-right: 25px;
 }
 
 .peopleLink {
@@ -781,6 +791,7 @@ input:checked + label:before {
 
 .advParent {
   max-height: 541px;
+  color: $navColor;
 }
 
 .advComm {
@@ -1048,6 +1059,14 @@ input:checked + label:before {
 .inputText {
   border: 1px solid $line;
   margin: 0 14px;
+  max-width: 250px;
+  width: 100%;
+
+  .inVideo {
+    max-width: 419px;
+    width: 100%;
+
+  }
 }
 
 .newsText {
@@ -1227,6 +1246,31 @@ input:checked + label:before {
   }
 }
 
+.vkGroup {
+  right: 3%;
+  width: 315px;
+  font-family: "Tahoma";
+  font-size: 13px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  left: auto;
+  top: 11%;
+
+  .yanTitle {
+
+    margin-bottom: 5px;
+  }
+
+  .hearingText {
+    color: $navColor;
+    margin-bottom: 20px;
+  }
+
+  .newsBtn {
+    font-size: 12px;
+    padding: 6.5px 14px;
+  }
+}
+
 .leftMiddle {
   .tags {
     border-top: 1px solid $line;
@@ -1252,13 +1296,35 @@ input:checked + label:before {
 .hidden {
   background-color: #f2f2f2;
   width: 100%;
-  height: 500px;
+  height: 620px;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
   border-top: 1px solid $line;
+  font-family: $tahomaFont;
+  font-size: 15px;
+
+  .blocks {
+    border-top: 1px solid $line;
+
+    .left {
+      padding-top: 44px;
+      padding-right: 25px;
+      border-bottom: 1px solid $line;
+    }
+
+      .right {
+          padding-top: 20px;
+          padding-right: 25px;
+      }
+
+      .presentBtn {
+        margin-bottom: 25px;
+        padding: 6.5px 26.5px;
+      }
+  }
 }
 
 .openH {
@@ -1268,14 +1334,88 @@ input:checked + label:before {
 .hiddenHeader {
   margin: 0 auto;
   height: 60px;
-  border-bottom: 1px solid $line;
   max-width: 677px;
   width: 50%;
+
 }
 
 .hiddenTel {
   max-width: 148px;
+  margin: 0 25px;
 }
+
+.hiddenLink {
+  color: $navColor;
+}
+
+/* hiddenLeft*/
+
+.hiddenOp {
+
+  padding: 15px;
+  border: 1px solid $line;
+  border-radius: 10px;
+}
+
+.Opros {
+
+  .title {
+    color: $blue;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+}
+
+.hiddenText {
+  font-weight: bold;
+  font-size: 15px;
+  max-width: 272px;
+  width: 100%;
+  font-family: $defaultFont;
+  margin-bottom: 15px;
+}
+
+.hiddenIn {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.progHidden {
+  max-width: 170px;
+  border-right: 1px solid $line;
+  border-bottom: 1px solid $line;
+  padding: 25px 23px;
+  width: 25%;
+  .title {
+    font-size: 13px;
+  }
+
+  .hiddenLink {
+    font-size: 12px;
+    display: block;
+  }
+}
+
+.HiddenOpPres {
+  padding-left: 28px;
+  position: relative;
+
+  .hiddenOpText {
+    margin-bottom: 12px;
+  }
+}
+
+.hiddenOpText {
+  max-width: 170px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1388,6 +1528,10 @@ input:checked + label:before {
     background-size: 90% 100%;
     padding: 0 13.5px;
     margin-right: 8px;
+
+    @media (max-width: 540px) {
+      display: none;
+    }
   }
 }
 
@@ -1605,6 +1749,89 @@ input:checked + label:before {
   }
 }
 
+.vkIcon {
+  &:after {
+    content: "";
+    background-image: url("/assets/img/vkicon.png");
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    background-size: auto;
+    background-position: 0 4px;
+    margin-left: 5px;
+  }
+}
+
+.smallCircle {
+  &:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+
+  }
+}
+
+.smallCircleNews {
+  &:before {
+    background-color: $blue;
+  }
+}
+
+.smallCircleAf{
+  &:before {
+    background-color: #dc0000;
+  }
+}
+
+.smallCircleVtv {
+  &:before {
+    background-color: #fbba76;
+  }
+}
+
+.smallCircleOB {
+  &:before {
+    background-color: #660099;
+  }
+}
+
+.smallCircleVak {
+  &:before {
+    background-color: #00759c;
+  }
+}
+
+.smallCircleVak {
+  &:before {
+    background-color: #339900;
+  }
+}
+
+.present {
+  &:before {
+    content: "";
+    background-image: url("/assets/img/present.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 18px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 button {
@@ -1619,9 +1846,13 @@ button {
 }
 
 .presentBtn {
-  border: 1px solid $blue;
   color: $blue;
   padding: 6.5px 29.5px;
+  border: 0;
+
+  &:hover {
+    border: 1px solid $blue;
+  }
 }
 
 .newsBtn {
@@ -1630,5 +1861,10 @@ button {
   color: $white;
 }
 
+.hiddenImg {
+  max-width: 120px;
+  width: 100%;
+  height: 91px;
+  float: right;
 
-
+}
