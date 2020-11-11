@@ -1,26 +1,74 @@
-
 button {
   background-color: transparent;
   font-size: 13px;
   text-align: center;
-  border: 1px solid $line;
   margin: 0 auto;
   border-radius: 5px;
   padding: 6.5px 17.5px;
   color: $navColor;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $line;
+  }
+}
+
+.chillLink {
+  text-transform: uppercase;
+  color: #343432;
+  text-shadow: 3px 1px #fff;
+  background-color: #e9f065;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-style: italic;
+  margin-right: 0;
+  max-width: 158px;
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid transparent;
+  text-decoration: underline;
+
+  &:hover {
+    background-color: #ecf16b;
+    border: 1px solid transparent;
+  }
+}
+
+.videoLink {
+  color: $white;
+  background-color: #038fbf;
+  text-shadow: none;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #ecf16b;
+    border: 1px solid transparent;
+  }
 }
 
 .presentBtn {
-  border: 1px solid $blue;
   color: $blue;
   padding: 6.5px 29.5px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $blue;
+  }
 }
 
 .newsBtn {
   font-size: 15px;
   background-color: $blue;
   color: $white;
+  border-radius: 3px;
 }
 
+.hiddenImg {
+  max-width: 120px;
+  width: 100%;
+  height: 91px;
+  float: right;
 
+}
 

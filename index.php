@@ -12,9 +12,14 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
           integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
           crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap"
+          onload="this.rel='stylesheet'" as="style">
+
+    <link rel="stylesheet" rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+          onload="this.rel='stylesheet'" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Votkinsk</title>
 </head>
@@ -22,16 +27,16 @@
 
 <?php
 include "include/modals/header.php"
-
 ?>
 
+
 <div class="headL d-flex align-items-center position-relative">
-    <div class="container con">
-        <div class="cityParent map col-xl-3">
+    <div class="container d-flex justify-content-between align-items-center position-relative">
+        <div class="cityParent map col-xl-3 col-lg-3 col-md-4">
             <h2 class="title titleCity">Воткинск</h2>
             <a class="cityLink" href="">Выбрать другой город</a>
         </div>
-        <nav class="nav col-xl-6">
+        <nav class="nav col-xl-6 col-lg-6 col-md-8">
             <ul class="menu">
                 <li><a class="link" href="/">Новости</a></li>
                 <li><a class="link" href="/">Объявления</a></li>
@@ -46,134 +51,269 @@ include "include/modals/header.php"
                 <div class="menu-btn__burger"></div>
             </div>
         </nav>
-        <div class="curseParent col-xl-3">
+        <div class="curseParent col-xl-3 col-lg-3">
             <p class="curseValue doll arrowDown">64.37</p>
             <p class="curseValue eu arrowDown">68.37</p>
             <p class="curseValue neft arrowTop">47.37</p>
         </div>
 
-        <div class="hidden">
+    </div>
+
+    <div class="hidden">
+        <div class="container">
             <div class="hiddenHeader d-flex col-xl-6 align-items-center">
-                <a href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
+                <a class="hiddenLink" href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
                 <div class="hiddenTel">
-                    <a href="/">+7 (912) 441-01-25</a>
-                    <a href="/">+7 (34145) 5-99-75</a>
+                    <a class="hiddenLink" href="/">+7 (912) 441-01-25</a>
+                    <a class="hiddenLink" href="/">+7 (34145) 5-99-75</a>
                 </div>
-                <a href="/">Меню сайта</a>
+                <a class="hiddenLink" href="/">Меню сайта</a>
 
             </div>
 
-            <div class="blocks">
-                <div class="left col-xl-3"></div>
-                <div class="middle col-xl-6"></div>
-                <div class="right col-xl-3"></div>
+            <div class="blocks d-flex">
+                <div class="left col-xl-3">
+
+                    <div class="Opros">
+                        <h3 class="title">Опрос</h3>
+                        <p class="hiddenText">Считаете ли вы, что Девятова
+                            Мария Елифериевна достойна
+                            быть занесенной на Доску
+                            Почета:</p>
+                        <div class="hiddenIn">
+                            <input type="checkbox" id="hidden1"><label for="hidden1">Да</label>
+                            <input type="checkbox" id="hidden2"><label for="hidden2">Нет</label>
+                            <input type="checkbox" id="hidden3"><label for="hidden3">Мне все равно</label>
+                            <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
+                                комментариях)</label>
+                        </div>
+                        <div class="btnHidden d-flex">
+                            <button type="button" class="presentBtn">Голосовать</button>
+                            <button type="button" class="presentBtn">все опросы</button>
+                        </div>
+                        <img class="hiddenImg" src="/assets/img/teamH.png" alt="">
+                    </div>
+                </div>
+                <div class="middle col-xl-6 p-0 d-flex flex-wrap">
+                    <div class="progHiddenParent d-flex flex-wrap">
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleNews">Новости</h4>
+                            <a class="hiddenLink" href="/">Сегодня</a>
+                            <a class="hiddenLink" href="/">Воткинска</a>
+                            <a class="hiddenLink" href="/">Видеоновости</a>
+                            <a class="hiddenLink" href="/">Статьи</a>
+                            <a class="hiddenLink" href="/">Вебкамеры Воткинска</a>
+                            <a class="hiddenLink" href="/">Народный контроль</a>
+                            <a class="hiddenLink" href="/">Все</a>
+                            <a class="hiddenLink" href="/">Разместить новость</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleAf">Афиша</h4>
+                            <a class="hiddenLink" href="/">Сегодня</a>
+                            <a class="hiddenLink" href="/">Выставки</a>
+                            <a class="hiddenLink" href="/">Конценрты</a>
+                            <a class="hiddenLink" href="/">Отдых</a>
+                            <a class="hiddenLink" href="/">Спорт</a>
+                            <a class="hiddenLink" href="/">Бизнес</a>
+                            <a class="hiddenLink" href="/">Все</a>
+                            <a class="hiddenLink" href="/">Добавить мероприятие</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVtv">ВТВ</h4>
+                            <a class="hiddenLink" href="/">Прямая трансляция</a>
+                            <a class="hiddenLink" href="/">Передачи</a>
+                            <a class="hiddenLink" href="/">Программа</a>
+                            <a class="hiddenLink" href="/">Заказать видео</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
+                            <a class="hiddenLink" href="/">Овен</a>
+                            <a class="hiddenLink" href="/">Телец</a>
+                            <a class="hiddenLink" href="/">Близнецы</a>
+                            <a class="hiddenLink" href="/">Рак</a>
+                            <a class="hiddenLink" href="/">Лев</a>
+                            <a class="hiddenLink" href="/">Дева</a>
+                            <a class="hiddenLink" href="/">Весы</a>
+                            <a class="hiddenLink" href="/">Скорпион</a>
+                            <a class="hiddenLink" href="/">Стрелец</a>
+                            <a class="hiddenLink" href="/">Козерог</a>
+                            <a class="hiddenLink" href="/">Водолей</a>
+                            <a class="hiddenLink" href="/">Рыбы</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleOB">Объявления</h4>
+                            <a class="hiddenLink" href="/">Сегодня</a>
+                            <a class="hiddenLink" href="/">Все</a>
+                            <a class="hiddenLink" href="/">Подать объявление</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVtv">Люди</h4>
+                            <a class="hiddenLink" href="/">Блоги</a>
+                            <a class="hiddenLink" href="/">Прямой эфир</a>
+                            <a class="hiddenLink" href="/">Слухи</a>
+                            <a class="hiddenLink" href="/">Пользователи</a>
+                            <a class="hiddenLink" href="/">Зарегистрироваться</a>
+
+                        </div>
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVak">Вакансии</h4>
+                            <a class="hiddenLink" href="/">Горячие</a>
+                            <a class="hiddenLink" href="/">Новые</a>
+                            <a class="hiddenLink" href="/">Все</a>
+                            <a class="hiddenLink" href="/">Разместить</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right col-xl-3">
+                    <div class="Opros">
+                        <h3 class="title">Опрос</h3>
+                        <p class="hiddenText">Считаете ли вы, что Девятова
+                            Мария Елифериевна достойна
+                            быть занесенной на Доску
+                            Почета:</p>
+                        <div class="hiddenIn">
+                            <input type="checkbox" id="hidden5"><label for="hidden5">Да</label>
+                            <input type="checkbox" id="hidden6"><label for="hidden6">Нет</label>
+                            <input type="checkbox" id="hidden7"><label for="hidden7">Мне все равно</label>
+                            <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
+                                комментариях)</label>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="presentBtn">Голосовать</button>
+                            <button type="button" class="presentBtn">все опросы</button>
+                        </div>
+
+                        <div class="HiddenOpPres presentBox">
+                            <p class="hiddenText">Получай баллы за ответы на опросы</p>
+                            <button type="button" class="presentBtn">хочу получить баллы</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
 
 <div class="record d-flex">
     <div class="container">
         <div class="blocks d-flex">
             <div class="left col-xl-3">
+
                 <div class="rightTitle">
                     <h2 class="title">Новые записи в блогах</h2>
                 </div>
                 <div class="blockParent">
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
-                        <a href="/"></a>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
                 <img class="advImg" src="/assets/img/term.jpg" alt="">
+
                 <div class="rightTitle">
                     <h2 class="title">Выбор редакции</h2>
                 </div>
-
                 <div class="blockParent">
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
-                    <div class="recording d-flex">
+                    <div class="recording">
                         <time>12:35</time>
                         <p class="recordingLink">США госсекретарь Джон
                             Керри заявил во вторник,
                             что Йемен Хути группы 's
                             и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все новости редакции</a>
                 </div>
-                <div class="advP">
-                    <img class="advImg" src="/assets/img/wms.jpg" alt="">
-                </div>
+                <img class="advImg" src="/assets/img/wms.jpg" alt="">
+
                 <div class="hearing">
                     <div class="hearingImg">
                         <img src="/assets/img/ear.png" alt="">
                     </div>
                     <div class="hearingContent">
-                        <a class="close hearingClose" href="/"></a>
+                        <a class="close" href="/"></a>
                         <h4 class="yanTitle">Я слышал, что...</h4>
                         <p>Подросткам продают пиво!</p>
                         <p>В магазине "БАСКО" ул.1 Мая 83</p>
@@ -187,47 +327,53 @@ include "include/modals/header.php"
                 <div class="rightTitle">
                     <h2 class="title">Новости партнеров</h2>
                 </div>
-                <div class="recording d-flex">
-                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
-                    <p class="recordingLink">Керри объявляет Йемен
-                        о прекращении огня
-                        на возражения</p>
+                <div class="blockParent">
+                    <div class="recording">
+                        <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                        <p class="recordingLink">Керри объявляет Йемен
+                            о прекращении огня
+                            на возражения</p>
+                        <a class="transLink" href="/"></a>
+                    </div>
+                    <div class="recording">
+                        <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                        <p class="recordingLink">Керри объявляет Йемен
+                            о прекращении огня
+                            на возражения</p>
+                        <a class="transLink" href="/"></a>
+                    </div>
+                    <div class="recording">
+                        <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                        <p class="recordingLink">Керри объявляет Йемен
+                            о прекращении огня
+                            на возражения</p>
+                        <a class="transLink" href="/"></a>
+                    </div>
+                    <div class="recording">
+                        <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                        <p class="recordingLink">Керри объявляет Йемен
+                            о прекращении огня
+                            на возражения</p>
+                        <a class="transLink" href="/"></a>
+                    </div>
+                    <div class="recording">
+                        <img class="partImg" src="/assets/img/chorus.jpg" alt="">
+                        <p class="recordingLink">Керри объявляет Йемен
+                            о прекращении огня
+                            на возражения</p>
+                        <a class="transLink" href="/"></a>
+                    </div>
                 </div>
-                <div class="recording d-flex">
-                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
-                    <p class="recordingLink">Керри объявляет Йемен
-                        о прекращении огня
-                        на возражения</p>
-                </div>
-                <div class="recording d-flex">
-                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
-                    <p class="recordingLink">Керри объявляет Йемен
-                        о прекращении огня
-                        на возражения</p>
-                </div>
-                <div class="recording d-flex">
-                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
-                    <p class="recordingLink">Керри объявляет Йемен
-                        о прекращении огня
-                        на возражения</p>
-                </div>
-                <div class="recording d-flex">
-                    <img class="partImg" src="/assets/img/chorus.jpg" alt="">
-                    <p class="recordingLink">Керри объявляет Йемен
-                        о прекращении огня
-                        на возражения</p>
-                </div>
-
-
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">еще новости партнеров</a>
                 </div>
+
             </div>
             <div class="middle col-xl-6">
                 <div class="cal d-flex justify-content-between">
                     <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
-                    <a class="chillLink pal" href="/">хочу отдохнуть</a>
+                    <button type="button" class="chillLink pal">хочу отдохнуть</button>
                 </div>
                 <div class="rad">
                     <input type="checkbox" id="1"><label for="1">все</label>
@@ -239,19 +385,19 @@ include "include/modals/header.php"
                     <input type="checkbox" id="7"><label for="7">выставки</label>
                     <input type="checkbox" id="8"><label for="8">кафе</label>
                 </div>
+
                 <div class="news">
                     <div class="newsBlock">
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/rocket.jpg" alt="">
                             <div class="newsImgStats">
                                 <div class="newsStatEye">
-                                    <span class="ImgIcon eye">93</span>
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
                                 </div>
-                                <div class="newsStatComm">
-                                    <span class="ImgIcon comm">26</span>
-                                </div>
-                                <p class="newsTextStats">сегодня 2 часа назад</p>
+                                <p class="vtvText">сегодня 2 часа назад</p>
                             </div>
+                            <a class="transLink" href=""></a>
                             <p class="newsImgBlock newsImgBlockNews">новости</p>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
@@ -262,6 +408,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockPoster">афиша</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -273,14 +420,13 @@ include "include/modals/header.php"
                             <img class="newsImgImg" src="/assets/img/rocket.jpg" alt="">
                             <div class="newsImgStats">
                                 <div class="newsStatEye">
-                                    <span class="ImgIcon eye">93</span>
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
                                 </div>
-                                <div class="newsStatComm">
-                                    <span class="ImgIcon comm">26</span>
-                                </div>
-                                <p class="newsTextStats">сегодня 2 часа назад</p>
+                                <p class="vtvText">сегодня 2 часа назад</p>
                             </div>
                             <p class="newsImgBlock newsImgBlockVtv">втв</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -292,6 +438,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockNews">новости</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -304,6 +451,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/rocket.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockPoster">афиша</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -313,6 +461,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockPoster">афиша</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -324,14 +473,13 @@ include "include/modals/header.php"
                             <img class="newsImgImg" src="/assets/img/rocket.jpg" alt="">
                             <div class="newsImgStats">
                                 <div class="newsStatEye">
-                                    <span class="ImgIcon eye">93</span>
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
                                 </div>
-                                <div class="newsStatComm">
-                                    <span class="ImgIcon comm">26</span>
-                                </div>
-                                <p class="newsTextStats">сегодня 2 часа назад</p>
+                                <p class="vtvText">сегодня 2 часа назад</p>
                             </div>
                             <p class="newsImgBlock newsImgBlockNews">новости</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -341,6 +489,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockVtv">втв</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -351,6 +500,7 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/rocket.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockNews">новости</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
@@ -362,13 +512,14 @@ include "include/modals/header.php"
                         <div class="newsImg">
                             <img class="newsImgImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="newsImgBlock newsImgBlockNews">новости</p>
+                            <a class="transLink" href=""></a>
                         </div>
                         <h2 class="title newsBlockTitle">Керри объявляет Йемен о прекращении огня на возражения
                             правительства</h2>
                         <p class="newsBlockText">США госсекретарь Джон Керри заявил</p>
                     </div>
 
-                    <div class="recordingInt line recordBtn">
+                    <div class="recordingInt d-flex line recordBtn">
                         <button type="button" class="load">загрузить еще</button>
                     </div>
                 </div>
@@ -376,103 +527,99 @@ include "include/modals/header.php"
                 <div class="rightTitle">
                     <h2 class="title">Интересное</h2>
                 </div>
-                <div class="recordingInt">
-                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
-                    <div>
-                        <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
-                            правительства США госсекретарь Джон Керри заявил во вторник,
-                            что Йемен Хути группы 's</p>
-                        <div class="newsImgStats statInt">
-                            <div class="newsStatEye">
-                                <span class="IntIcon eye">93</span>
+                <div class="blockParent">
+                    <div class="recording">
+                        <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                        <div class="blockParentInt">
+                            <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
+                                правительства США госсекретарь Джон Керри заявил во вторник,
+                                что Йемен Хути группы 's</p>
+                            <div class="newsImgStats">
+                                <div class="newsStatEye">
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
+                                </div>
+                                <p class="vtvText">сегодня 2 часа назад</p>
                             </div>
-                            <div class="newsStatComm">
-                                <span class="IntIcon comm">26</span>
+                        </div>
+                        <a class="transLink" href=""></a>
+                    </div>
+                    <div class="recording">
+                        <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                        <div class="blockParentInt">
+                            <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
+                                правительства США госсекретарь Джон Керри заявил во вторник,
+                                что Йемен Хути группы 's</p>
+                            <div class="newsImgStats">
+                                <div class="newsStatEye">
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
+                                </div>
+                                <p class="vtvText">сегодня 2 часа назад</p>
                             </div>
-                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
+                            <a class="transLink" href=""></a>
+                        </div>
+                    </div>
+                    <div class="recording">
+                        <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                        <div class="blockParentInt">
+                            <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
+                                правительства США госсекретарь Джон Керри заявил во вторник,
+                                что Йемен Хути группы 's</p>
+                            <div class="newsImgStats">
+                                <div class="newsStatEye">
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
+                                </div>
+                                <p class="vtvText">сегодня 2 часа назад</p>
+                            </div>
+                        </div>
+                        <a class="transLink" href=""></a>
+                    </div>
+                    <div class="recording">
+                        <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                        <div class="blockParentInt">
+                            <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
+                                правительства США госсекретарь Джон Керри заявил во вторник,
+                                что Йемен Хути группы 's</p>
+                            <div class="newsImgStats">
+                                <div class="newsStatEye">
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
+                                </div>
+                                <p class="vtvText">сегодня 2 часа назад</p>
+                            </div>
+                            <a class="transLink" href=""></a>
+                        </div>
+                    </div>
+                    <div class="recording">
+                        <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
+                        <div class="blockParentInt">
+                            <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
+                                правительства США госсекретарь Джон Керри заявил во вторник,
+                                что Йемен Хути группы 's</p>
+                            <div class="newsImgStats">
+                                <div class="newsStatEye">
+                                    <span class="eye">93</span>
+                                    <span class="comm">26</span>
+                                </div>
+                                <p class="vtvText">сегодня 2 часа назад</p>
+                            </div>
+                            <a class="transLink" href=""></a>
                         </div>
                     </div>
                 </div>
-                <div class="recordingInt">
-                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
-                    <div>
-                        <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
-                            правительства США госсекретарь Джон Керри заявил во вторник,
-                            что Йемен Хути группы 's</p>
-                        <div class="newsImgStats statInt">
-                            <div class="newsStatEye">
-                                <span class="IntIcon eye">93</span>
-                            </div>
-                            <div class="newsStatComm">
-                                <span class="IntIcon comm">26</span>
-                            </div>
-                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recordingInt">
-                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
-                    <div>
-                        <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
-                            правительства США госсекретарь Джон Керри заявил во вторник,
-                            что Йемен Хути группы 's</p>
-                        <div class="newsImgStats statInt">
-                            <div class="newsStatEye">
-                                <span class="IntIcon eye">93</span>
-                            </div>
-                            <div class="newsStatComm">
-                                <span class="IntIcon comm">26</span>
-                            </div>
-                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recordingInt">
-                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
-                    <div>
-                        <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
-                            правительства США госсекретарь Джон Керри заявил во вторник,
-                            что Йемен Хути группы 's</p>
-                        <div class="newsImgStats statInt">
-                            <div class="newsStatEye">
-                                <span class="IntIcon eye">93</span>
-                            </div>
-                            <div class="newsStatComm">
-                                <span class="IntIcon comm">26</span>
-                            </div>
-                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recordingInt">
-                    <img class="IntImg" src="/assets/img/chorus.jpg" alt="">
-                    <div>
-                        <p class="recordingLink intLink">Керри объявляет Йемен о прекращении огня на возражения
-                            правительства США госсекретарь Джон Керри заявил во вторник,
-                            что Йемен Хути группы 's</p>
-                        <div class="newsImgStats statInt">
-                            <div class="newsStatEye">
-                                <span class="IntIcon eye">93</span>
-                            </div>
-                            <div class="newsStatComm">
-                                <span class="IntIcon comm">26</span>
-                            </div>
-                            <p class="newsTextStats IntTextStats">сегодня 2 часа назад</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recordingInt line">
+                <div class="recordingInt d-flex line">
                     <button type="button">загрузить еще</button>
                 </div>
-
                 <div class="owlParent">
                     <div class="owl-people owl-carousel">
                         <div class="peopleStruct">
                             <div class="peopleInfo">
-                                <h2 class="owlTitle title">Наши люди</h2>
+                                <h2 class="title">Наши люди</h2>
                                 <img class="peopleImg" src="assets/img/people1.jpg" alt="">
                                 <div class="owlBlock">
-                                    <h3 class="title peopleTitle">Юрий Бычков</h3>
+                                    <h6 class="title">Юрий Бычков</h6>
                                     <p class="peopleText">Депутат ГосСовета Юрий Бычков отвечает
                                         на вопросы горожан в программе
                                         «Юрий Бычков отвечает».</p>
@@ -486,47 +633,53 @@ include "include/modals/header.php"
 
             </div>
             <div class="right col-xl-3">
+
                 <div class="rightTitle">
                     <h2 class="title rightT">Прямой эфир</h2>
-                    <a class="videoLink chillLink  camera" href="/">заказать видео</a>
+                    <button type="button" class="videoLink chillLink  camera">заказать видео</button>
                 </div>
-                <div class="blockParent advParent">
+                <div class="blockParent">
                     <div class="recording lineLeft flex-wrap">
                         <p class="userName">Вадим Исаков</p>
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <a class="advLink" href="/">Реклама</a>
+                        <p class="advLink">Реклама</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <a class="advLink" href="/">Реклама</a>
+                        <p class="advLink">Реклама</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
+                        <a class="transLink" href="/"></a>
 
                     </div>
                     <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <a class="advLink" href="/">Реклама</a>
+                        <p class="advLink">Реклама</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
                         <p class="userName">Вадим Исаков</p>
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
+                        <a class="transLink" href="/"></a>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="busImg">
@@ -537,12 +690,12 @@ include "include/modals/header.php"
                 <div class="rightTitle">
                     <h2 class="title">Комментируемое</h2>
                 </div>
-                <div class="blockParent advComm">
+                <div class="blockParent">
                     <div class="recording lineLeft">
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <div class="newsImgStats newsAdvStats">
+                        <div class="newsImgStats">
                             <div class="newsStatEye">
                                 <span class="eye">93</span>
                             </div>
@@ -550,13 +703,14 @@ include "include/modals/header.php"
                                 <span class="comm">26</span>
                             </div>
                         </div>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
 
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <div class="newsImgStats newsAdvStats">
+                        <div class="newsImgStats">
                             <div class="newsStatEye">
                                 <span class="eye">93</span>
                             </div>
@@ -564,12 +718,13 @@ include "include/modals/header.php"
                                 <span class="comm">26</span>
                             </div>
                         </div>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <div class="newsImgStats newsAdvStats">
+                        <div class="newsImgStats">
                             <div class="newsStatEye">
                                 <span class="eye">93</span>
                             </div>
@@ -577,12 +732,13 @@ include "include/modals/header.php"
                                 <span class="comm">26</span>
                             </div>
                         </div>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <div class="newsImgStats newsAdvStats">
+                        <div class="newsImgStats">
                             <div class="newsStatEye">
                                 <span class="eye">93</span>
                             </div>
@@ -590,12 +746,13 @@ include "include/modals/header.php"
                                 <span class="comm">26</span>
                             </div>
                         </div>
+                        <a class="transLink" href="/"></a>
                     </div>
                     <div class="recording lineLeft">
-                        <p class="recordingLink">США госсекретарь Джон Керри
+                        <p class="recordingLink advText">США госсекретарь Джон Керри
                             заявил во вторник, что Йемен
                             Хути группы 's и саудовский...</p>
-                        <div class="newsImgStats newsAdvStats">
+                        <div class="newsImgStats">
                             <div class="newsStatEye">
                                 <span class="eye">93</span>
                             </div>
@@ -603,9 +760,10 @@ include "include/modals/header.php"
                                 <span class="comm">26</span>
                             </div>
                         </div>
+                        <a class="transLink" href="/"></a>
                     </div>
                 </div>
-                <div class="recording d-flex pl-0">
+                <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все сообщения</a>
                 </div>
                 <div class="present float-left">
@@ -628,7 +786,7 @@ include "include/modals/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-10 d-flex">
+            <div class="yanContent col-xl-9 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
@@ -637,24 +795,28 @@ include "include/modals/header.php"
                     <p>Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
                     <p>Горячие столы!</p>
                     <p>Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
                     <p>Горячие столы!</p>
                     <p>Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
                     <p>Горячие столы!</p>
                     <p>Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
                 </div>
             </div>
         </div>

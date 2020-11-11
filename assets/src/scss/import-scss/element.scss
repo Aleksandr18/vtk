@@ -1,3 +1,4 @@
+
 header {
   display: flex;
   width: 100%;
@@ -57,6 +58,16 @@ header {
   border-bottom: 1px solid #d8d8d8;
 }
 
+.travel {
+  max-width: 630px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
 .travelImg {
   width: 100%;
   height: 100%;
@@ -64,13 +75,6 @@ header {
   top: 0;
   left: 0;
   object-fit: cover;
-}
-
-.travel {
-  max-width: 630px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 .travelHeader {
@@ -81,6 +85,10 @@ header {
   position: absolute;
   top: 10%;
   left: 15%;
+
+  @media (max-width: 990px) {
+    font-size: 24px;
+  }
 }
 
 .travelText {
@@ -91,6 +99,10 @@ header {
   top: 45%;
   left: 15%;
   font-family: $chillFont;
+
+  @media (max-width: 990px) {
+    font-size: 16px;
+  }
 }
 
 .travelLink {
@@ -136,15 +148,9 @@ header {
   height: 62px;
 }
 
-.con {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .cityParent {
   display: inline-block;
-  max-width: 260px;
+  max-width: 322px;
   position: relative;
   width: 100%;
   padding: 0;
@@ -164,6 +170,18 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  padding-right: 62px;
+
+  @media (max-width: 990px) {
+    position: absolute;
+    right: 0;
+  }
+
+  .menu {
+    @media (max-width: 990px) {
+      display: none;
+    }
+  }
 }
 
 .menu li {
@@ -191,7 +209,7 @@ header {
   background: $blue;
   position: absolute;
   right: 0;
-  z-index: 3;
+  z-index: 5;
 
 }
 .menu-btn__burger {
@@ -238,6 +256,10 @@ header {
   max-width: 321px;
   width: 100%;
   padding: 0;
+
+  @media (max-width: 990px) {
+    display: none;
+  }
 }
 
 .curseValue {
@@ -271,6 +293,7 @@ header {
   max-height: 575px;
   overflow: hidden;
   overflow-y: auto;
+  color: $navColor;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -289,9 +312,21 @@ header {
   border-top: 1px solid $line;
   padding: 9px 15px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 990px) {
+    display: block;
+  }
 
   time {
     margin-right: 20px;
+  }
+
+  .newsImgStats {
+    position: static;
+    justify-content: space-between;
+    filter: grayscale(1);
   }
 }
 
@@ -300,6 +335,12 @@ header {
   width: 100%;
   margin-right: 15px;
   height: 50px;
+  
+  @media (max-width: 1200px) {
+    max-width: none;
+    height: auto;
+    margin-right: 0;
+  }
 }
 
 /* hearing */
@@ -330,11 +371,13 @@ header {
 
 .hearingContent {
   margin-left: 13px;
-}
+  color: $navColor;
 
-.hearingClose {
-  top: 16px !important;
-  right: 13px !important;
+  .close {
+    top: 16px;
+    right: 13px;
+  }
+
 }
 
 .advImg {
@@ -349,19 +392,9 @@ header {
   font-family: 'Tahoma Regular';
 }
 
-.newsAdvStats {
-  background: transparent !important;
-  padding: 5px 0 0 0 !important;
-  justify-content: space-between;
-  position: static !important;
-  filter: grayscale(1);
-  font-size: 13px;
-}
-
 .recordingAlllink {
   color: $blue;
   font-size: 14px;
-  font-weight: 600;
 }
 
 /* middle */
@@ -370,12 +403,42 @@ header {
   max-width: 677px;
   width: 50%;
 
-  @media (max-width: 960px) {
+  @media (max-width: 990px) {
     width: 75%;
+    padding-right: 0;
   }
 
   @media (max-width: 760px) {
     width: 100%;
+    padding: 0;
+  }
+
+  .blockParent {
+    max-height: none;
+
+    @media (max-width: 990px) {
+      margin: 0 auto;
+    }
+
+    .recording {
+      padding: 15px 0;
+      flex-wrap: nowrap;
+
+      .IntImg {
+        @media (max-width: 990px) {
+          max-width: none;
+          margin-right: 0;
+        }
+      }
+
+        .intLink {
+          @media (max-width: 990px) {
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+    }
+
   }
 }
 
@@ -385,6 +448,7 @@ header {
 
 .calText {
   color: #999;
+  font-size: 13px;
 }
 
 .calLink {
@@ -394,29 +458,21 @@ header {
   &:after {
     content: "";
     background-image: url("/assets/img/cal.png");
-    background-size: cover;
-    padding: 0 10px;
+    background-size: auto;
+    padding: 4px 12px;
     margin-left: 20px;
+    background-repeat: no-repeat;
   }
 }
 
-.chillLink {
-  text-transform: uppercase;
-  color: #343432;
-  text-shadow: 3px 1px #fff;
-  padding: 6px;
-  background-color: #e9f065;
-  text-decoration: revert;
-  font-size: 12px;
-  font-weight: 700;
-}
+
 
 .rad {
-  border-top: 1px solid $line;
-  border-bottom: 1px solid $line;
+  border-top: 2px solid $line;
+  border-bottom: 2px solid $line;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
   align-items: baseline;
   padding: 15px 0;
 }
@@ -435,6 +491,12 @@ label {
 
   cursor: default;
   color: $labelColor;
+  margin-right: 13px;
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:before {
     content: "";
@@ -471,6 +533,7 @@ input:checked + label:before {
   margin-right: 24px;
   margin-bottom: 15px;
   width: calc(50% - 12px);
+  font-family: $tahomaFont;
 
   &:nth-child(2n) {
     margin-right: 0;
@@ -480,12 +543,23 @@ input:checked + label:before {
     width: 100%;
     margin-right: 0;
   }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .newsImgStats {
+    background: rgba(3, 15, 25, 0.6);
+    padding: 5px 10px;
+    color: $white;
+  }
 }
 
 .newsImg {
   position: relative;
   width: 100%;
-  padding-top: 56.7%;
+  padding-top: 67.1%;
   margin-bottom: 8px;
 }
 
@@ -506,9 +580,15 @@ input:checked + label:before {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(3, 15, 25, 0.6);
-  padding: 5px 10px;
+  background: transparent;
+  padding-top: 5px;
   font-size: 13px;
+  justify-content: space-between;
+  color: $labelColor;
+
+  @media (max-width: 760px) {
+    justify-content: center;
+  }
 }
 
 .newsStatEye {
@@ -541,12 +621,8 @@ input:checked + label:before {
   color: $white;
 }
 
-.newsBlockTitle {
-  font-size: 14px !important;
-}
-
 .newsBlockText {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .newsImgBlockNews {
@@ -564,7 +640,10 @@ input:checked + label:before {
 
 .advBanner {
   width: 100%;
+}
 
+.blockInt {
+  max-height: 610px;
 }
 
 .recordingInt {
@@ -575,6 +654,28 @@ input:checked + label:before {
   padding: 15px 0;
   width: 100%;
 
+  @media (max-width: 540px) {
+    display: block;
+  }
+
+  .recordingLink {
+    margin-bottom: 9px;
+  }
+}
+
+.blockParentInt {
+
+  .newsImgStats {
+    position: static;
+    background: transparent;
+    padding: 0;
+    padding-top: 5px;
+    
+    @media (max-width: 990px) {
+      justify-content: center;
+    }
+  }
+
 }
 
 
@@ -583,10 +684,15 @@ input:checked + label:before {
   width: 100%;
   max-width: 137px;
   margin-right: 22px;
+
+  @media(max-width:540px) {
+    max-width: none;
+    margin-right: 0;
+  }
 }
 
 .intLink {
-  max-width: none;
+  max-width: 455px;
 }
 
 .statInt {
@@ -629,20 +735,18 @@ input:checked + label:before {
   display: flex;
   max-width: 645px;
   padding: 30px;
+
+  .title {
+    font-size: 15px;
+    width: 246px;
+  }
 }
 
-.owlTitle {
-  font-size: 15px !important;
-  width: 246px;
-}
 
-.peopleTitle {
-  font-size: 15px !important;
-}
 
 .peopleText {
   font-size: 15px;
-
+  padding-right: 25px;
 }
 
 .peopleLink {
@@ -693,6 +797,10 @@ input:checked + label:before {
   font-style: italic;
   font-family: 'Tahoma Regular';
 
+  .title {
+    font-size: 15px;
+  }
+
 }
 
 /* right */
@@ -703,7 +811,11 @@ input:checked + label:before {
   width: 25%;
   padding-right: 0;
 
-  @media (max-width: 960px) {
+  .blockParent {
+    max-height: 530px;
+  }
+
+  @media (max-width: 990px) {
     display: none;
   }
 }
@@ -716,16 +828,11 @@ input:checked + label:before {
 }
 
 
-.videoLink {
-  color: $white;
-  background-color: #038fbf;
-  text-shadow: none;
-  font-weight: 600;
 
-}
 
 .advParent {
   max-height: 541px;
+  color: $navColor;
 }
 
 .advComm {
@@ -798,6 +905,7 @@ input:checked + label:before {
   font-size: 21px;
   margin-bottom: -14px;
   font-weight: 600;
+  font-style: italic;
 }
 
 .presentImg {
@@ -818,6 +926,8 @@ input:checked + label:before {
 .textReg {
   color: $blue;
   margin-bottom: 15px;
+  font-weight: 900;
+  font-style: italic;
 }
 
 /* yan */
@@ -828,6 +938,7 @@ input:checked + label:before {
   position: relative;
   padding: 25px 15px;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 
 .yanTitle {
@@ -835,16 +946,34 @@ input:checked + label:before {
   margin-bottom: 10px;
   width: 100%;
   font-weight: 500;
+  color: $defaultColor;
 }
 
 .yanText {
-  max-width: 229px;
-  width: 100%;
+  width: calc(25% - 40px);
   font-size: 15px;
+  margin-bottom: 24px;
+  margin-right: 20px;
 
   &:first-child {
     padding-left: 15px;
   }
+
+  @media (max-width: 990px) {
+    width: calc(50% - 20px);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 540px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 .rec {
@@ -867,6 +996,11 @@ input:checked + label:before {
   font-size: 11px;
   max-width: 384px;
   width: 50%;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .footerLinksParent {
@@ -877,9 +1011,28 @@ input:checked + label:before {
   justify-content: space-between;
 }
 
-.footerImg {
+.footerImgParent {
   width: 50%;
   text-align: right;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.footerImg {
+  max-width: 302px;
+  width: 100%;
+}
+
+.footerIconsParent {
+  width: 50%;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .footerIcons {
@@ -890,6 +1043,7 @@ input:checked + label:before {
   display: inline-block;
   text-align: center;
   margin-right: 10px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -914,24 +1068,45 @@ input:checked + label:before {
 .footerRight {
   text-align: right;
   max-width: 337px;
+  width: 50%;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+}
+
+.footerLinks {
+  width: 50%;
+  width: 100%;
 }
 
 
 
 /* news */
 
-.cal {
+.calNews {
   .calText {
-    margin-right: 14px;
+    margin-left: 12px;
     position: relative;
+    font-family: $tahomaFont;
     font-style: italic;
     font-size: 12px;
+    text-decoration: underline;
+
+    &:last-child {
+      text-decoration: none;
+    }
   }
 }
 
-.newsBlockTitleNews {
-  font-size: 24px !important;
+.newsBlockParent {
+  .title {
+    font-size: 24px;
+  }
 }
+
 
 .autor {
   padding: 10px 0;
@@ -939,16 +1114,34 @@ input:checked + label:before {
 
 .autorText {
   padding-left: 15px;
+
+  .title {
+    font-size: 13px !important;
+    font-style: italic !important;
+  }
+
+  .autorT {
+    color: $navColor;
+    font-size: 13px;
+  }
 }
 
 .inputText {
   border: 1px solid $line;
   margin: 0 14px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.inVideo {
+  max-width: 419px;
+  width: 100%;
 }
 
 .newsText {
   padding: 25px 0;
   border-bottom: 3px solid $line;
+  font-size: 15px;
 }
 
 .tags {
@@ -957,15 +1150,53 @@ input:checked + label:before {
 
   .title {
     margin-right: 28px;
+    font-size: 14px;
   }
 
   .tagText {
     margin-right: 20px;
+    font-size: 12px;
   }
 }
 
+
 .tagsContent {
   padding: 20px 25px;
+  padding-bottom: 0;;
+
+  .recording {
+    border: none;
+    width: calc(50% - 20px);
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1200px) {
+      display: block;
+    }
+    
+    @media (max-width: 540px) {
+      width: 100%;
+      margin-right: 0;
+    }
+    
+
+    .recordingLink {
+      max-width: 150px;
+      
+      @media (max-width: 1200px) {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 .tagRecording {
@@ -976,6 +1207,11 @@ input:checked + label:before {
 
 .partParent {
   background-color: #f2f2f2;
+
+  .recordingInt {
+    border: 0;
+  }
+
 }
 
 .newsConParent {
@@ -992,17 +1228,36 @@ input:checked + label:before {
 }
 
 .newsCon {
-  width: 20%;
+  width: calc(20% - 14px);
   margin-right: 17px;
   font-size: 13px;
-  max-width: 190px;
+  max-width: 178px;
 
   &:last-child {
     margin-right: 0;
   }
+
+  .newsImg1 {
+    margin-bottom: 10px;
+  }
+
+  .newsConText {
+    font-family: 'Tahoma';
+    font-size: 13px;
+    max-width: 173px;
+  }
 }
 
 /* page VTV */
+
+.con {
+  .rightTitle {
+    @media (max-width:990px) {
+      display: none;
+    }
+  }
+}
+
 
 .vtvContent {
   padding: 20px 0;
@@ -1016,8 +1271,8 @@ input:checked + label:before {
 .vtvStats {
   position: static;
   width: auto;
-  background: transparent;
-  padding: 0;
+  background: transparent !important;
+  padding: 0 !important;
 
   .vtvText {
     margin-right: 27px;
@@ -1026,6 +1281,11 @@ input:checked + label:before {
   .newsStatEye {
     margin-right: 14px;
   }
+}
+
+.commImg {
+  max-width: 643px;
+  width: 100%;
 }
 
 .video {
@@ -1037,10 +1297,48 @@ input:checked + label:before {
   }
 }
 
+.videoVtv {
+  background-color: $black;
+  position: relative;
+  padding-top: 36.1%;
+
+  @media (max-width: 760px) {
+    padding-top: 54%;
+  }
+}
+
+.videoIframe {
+  padding: 0 163px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+
+  @media (max-width: 760px) {
+    padding: 0;
+  }
+
+}
+
 .videoToday {
   padding-top: 40px;
-  padding-bottom: 35px;
   border-top: 1px solid $line;
+  position: relative;
+
+  .newsBlock {
+    width: calc(25% - 45px);
+    margin-right: 60px;
+    margin-bottom: 40px;
+    position: relative;
+
+    .videoImg {
+      margin-bottom: 10px;
+    }
+
+
+  }
 
   .recordingInt {
     border: 0;
@@ -1048,12 +1346,18 @@ input:checked + label:before {
 }
 
 .videoContent {
-  width: calc(25% - 45px);
-  margin-right: 60px;
+  width: calc(25% - 47px);
+  margin-right: 61px;
   margin-bottom: 40px;
+  max-width: 275px;
 
   &:nth-child(4n) {
     margin-right: 0;
+  }
+
+  @media (max-width: 990px) {
+    width: calc(50% - 40px);
+
   }
 
   .videoImg {
@@ -1062,10 +1366,15 @@ input:checked + label:before {
 
   .title {
     font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .name {
     font-style: italic;
+    margin-bottom: 5px;
+    font-size: 13px;
   }
 }
 
@@ -1081,6 +1390,26 @@ input:checked + label:before {
   &:first-child {
     margin-left: 30px;
   }
+
+  @media (max-width: 1200px) {
+    width: calc(25% - 40px);
+  }
+
+  @media (max-width: 990px) {
+    width: calc(50% - 20px);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 540px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 .vtvFooter {
@@ -1097,16 +1426,20 @@ input:checked + label:before {
 
   .video {
     .videoToday {
-      padding-right: 35px;
+      padding-right: 15px;
 
       .videoContent {
-        width: calc(33.33333% - 40px);
+        width: calc(33.33333% - 26px);
+        margin-right: 39px;
 
         &:nth-child(3n) {
           margin-right: 0;
         }
-        &:nth-child(4n) {
-          margin-right: 60px;
+
+        @media (max-width: 760px) {
+          width: 100%;
+          text-align: center;
+          margin-right: 0;
         }
       }
     }
@@ -1123,21 +1456,69 @@ input:checked + label:before {
   }
 }
 
+.vkGroup {
+  right: 0%;
+  width: 315px;
+  font-family: "Tahoma";
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  left: auto;
+  top: 23%;
+
+  .yanTitle {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .hearingText {
+    color: $navColor;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .newsBtn {
+    font-size: 12px;
+    padding: 6.5px 14px;
+  }
+}
+
 .leftMiddle {
   .tags {
     border-top: 1px solid $line;
 
-    .tagRecording {
-      width: 33.33333%;
+    .recording {
+      width: calc(33.3333% - 7px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: 990px) {
+        width: 100%;
+
+      }
     }
+
   }
 }
 
 .right {
+
+  .vkGroup {
+    top: 11%;
+    right: 3%;
+  }
+
   .video {
     .videoToday {
       .videoContent {
         width: 100%;
+        margin-right: 0;
+        max-width: 277px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
       }
     }
   }
@@ -1148,13 +1529,35 @@ input:checked + label:before {
 .hidden {
   background-color: #f2f2f2;
   width: 100%;
-  height: 500px;
+  height: 620px;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   border-top: 1px solid $line;
+  font-family: $tahomaFont;
+  font-size: 15px;
+
+  .blocks {
+    border-top: 1px solid $line;
+
+    .left {
+      padding-top: 44px;
+      padding-right: 25px;
+      border-bottom: 1px solid $line;
+    }
+
+    .right {
+      padding-top: 20px;
+      padding-right: 25px;
+    }
+
+    .presentBtn {
+      margin-bottom: 25px;
+      padding: 6.5px 26.5px;
+    }
+  }
 }
 
 .openH {
@@ -1164,14 +1567,88 @@ input:checked + label:before {
 .hiddenHeader {
   margin: 0 auto;
   height: 60px;
-  border-bottom: 1px solid $line;
   max-width: 677px;
   width: 50%;
+
 }
 
 .hiddenTel {
   max-width: 148px;
+  margin: 0 25px;
 }
 
+.hiddenLink {
+  color: $navColor;
+}
 
+/* hiddenLeft*/
 
+.Opros {
+  .title {
+    color: $blue;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .hiddenText {
+    margin-bottom: 15px;
+  }
+
+  .hiddenIn {
+    margin-bottom: 20px;
+  }
+}
+
+.hiddenText {
+  font-weight: bold;
+  font-size: 15px;
+  max-width: 272px;
+  width: 100%;
+  font-family: $defaultFont;
+}
+
+.hiddenIn {
+  display: grid;
+}
+
+.progHidden {
+  max-width: 170px;
+  border-right: 1px solid $line;
+  border-bottom: 1px solid $line;
+  padding: 25px 23px;
+  width: 25%;
+  .title {
+    font-size: 13px;
+  }
+
+  .hiddenLink {
+    font-size: 12px;
+    display: block;
+  }
+}
+
+.HiddenOpPres {
+  padding-left: 28px;
+  position: relative;
+
+  .hiddenText {
+    max-width: 170px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .presentBtn {
+    padding: 6.5px 18px;
+  }
+}
+
+/* hidden Right */
+
+.right {
+  .Opros {
+    padding: 15px;
+    border: 1px solid $line;
+    border-radius: 10px;
+  }
+}

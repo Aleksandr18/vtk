@@ -2,7 +2,7 @@
     <div class="container">
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
-            <div class="footerContent col-xl-10 d-flex">
+            <div class="footerContent col-xl-9 d-flex">
                 <div class="footerLinksParent pt-0">
                     <div class="footerText">
                         <p>Воткинск.NET - информационно-развлекательный портал
@@ -12,15 +12,15 @@
                             Портал не предоставляет справочной информации.
                         </p>
                     </div>
-                    <div class="footerImg">
+                    <div class="footerImgParent">
 
-                        <img src="/assets/img/footerImg.png" alt="">
+                        <img class="footerImg" src="/assets/img/footerImg.png" alt="">
                     </div>
                 </div>
 
 
                 <div class="footerLinksParent">
-                    <div class="footerIconsParent w-50">
+                    <div class="footerIconsParent">
                         <a class="footerIcons" href="/">
                             <img src="/assets/img/facebook.png" alt="">
                         </a>
@@ -46,12 +46,12 @@
                             <img src="/assets/img/google+.png" alt="">
                         </a>
                     </div>
-                    <div class="footerText footerRight w-50">
+                    <div class="footerText footerRight">
                         <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
                             Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
                             Агенство креативных профессионалов</p>
                     </div>
-                    <div class="footerLinks w-50">
+                    <div class="footerLinks">
                         <a class="footerLink" href="/">О портале</a>
                         <a class="footerLink" href="/">Реклама</a>
                         <a class="footerLink" href="/">Вакансии</a>
