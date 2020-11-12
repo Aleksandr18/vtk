@@ -87,7 +87,7 @@ include "include/header.php"
                             <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
                                 комментариях)</label>
                         </div>
-                        <div class="btnHidden d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -169,6 +169,9 @@ include "include/header.php"
 
                         </div>
                     </div>
+                    <div class="recHidden">
+                        <img class="recHiddenImg" src="/assets/img/shop.jpg" alt="">
+                    </div>
 
                 </div>
                 <div class="right col-xl-3">
@@ -185,7 +188,7 @@ include "include/header.php"
                             <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
                                 комментариях)</label>
                         </div>
-                        <div class="d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -370,8 +373,8 @@ include "include/header.php"
 
             </div>
             <div class="middle col-xl-6">
-                <div class="cal d-flex justify-content-between">
-                    <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
+                <div class="cal d-flex justify-content-between flex-wrap align-items-baseline">
+                    <p class="calText calToday">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
                     <button type="button" class="chillLink pal">хочу отдохнуть</button>
                 </div>
@@ -786,7 +789,7 @@ include "include/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-9 d-flex">
+            <div class="yanContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
@@ -844,12 +847,6 @@ include "include/footer.php"
 
 </body>
 </html>
-
-
-
-
-
-
 
 
 
@@ -941,7 +938,7 @@ include "include/header.php"
                             <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
                                 комментариях)</label>
                         </div>
-                        <div class="btnHidden d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -1023,6 +1020,9 @@ include "include/header.php"
 
                         </div>
                     </div>
+                    <div class="recHidden">
+                        <img class="recHiddenImg" src="/assets/img/shop.jpg" alt="">
+                    </div>
 
                 </div>
                 <div class="right col-xl-3">
@@ -1039,7 +1039,7 @@ include "include/header.php"
                             <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
                                 комментариях)</label>
                         </div>
-                        <div class="d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -1287,52 +1287,54 @@ include "include/header.php"
                 </div>
                 <div class="tags d-flex align-items-baseline">
                     <h5 class="title tagTitle">Расскажите друзьям:</h5>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/facebook.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/twitter.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/vk.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/od.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/youtube.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/inst.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/chell.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/google+.png" alt="">
-                    </a>
+                    <div class="footerIconsParent">
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/facebook.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/twitter.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/vk.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/od.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/youtube.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/inst.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/chell.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/google+.png" alt="">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="tags pb-0">
                     <h5 class="title tagTitle">Похожие материалы:</h5>
 
                     <div class="tagsContent d-flex flex-wrap">
-                        <div class="recording tagRecording d-flex">
+                        <div class="recording tagRecording">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня</p>
                         </div>
-                        <div class="recording tagRecording d-flex">
+                        <div class="recording tagRecording">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня</p>
                         </div>
-                        <div class="recording tagRecording d-flex">
+                        <div class="recording tagRecording">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня</p>
                         </div>
-                        <div class="recording tagRecording d-flex">
+                        <div class="recording tagRecording">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня</p>
@@ -1343,7 +1345,7 @@ include "include/header.php"
 
                 <div class="rad d-block">
                     <h4 class="title">Комментарии:</h4>
-                    <img src="/assets/img/comments.png" alt="">
+                    <img class="commImg" src="/assets/img/comments.png" alt="">
                 </div>
 
                 <div class="rightTitle">
@@ -1563,7 +1565,7 @@ include "include/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent partParent col-xl-9 d-flex">
+            <div class="yanContent partParent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="title">Новости партнеров</h4>
 
                 <div class="newsConParent d-flex flex-wrap pb-0">
@@ -1618,7 +1620,7 @@ include "include/header.php"
                             Кирби.</p>
                     </div>
                 </div>
-                <div class="recordingInt line longLine">
+                <div class="recordingInt d-flex line">
                     <button type="button">загрузить еще</button>
                 </div>
 
@@ -1632,7 +1634,7 @@ include "include/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-9 d-flex">
+            <div class="yanContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
@@ -1695,15 +1697,6 @@ include "include/footer.php";
 
 
 
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html>
 <head>
@@ -1731,7 +1724,7 @@ include "include/header.php"
 ?>
 
 <div class="headL d-flex align-items-center position-relative">
-    <div class="container d-flex justify-content-between align-items-center position-relative">
+    <div class="container con d-flex justify-content-between align-items-center position-relative">
         <div class="cityParent map col-xl-3 col-lg-3 col-md-4">
             <h2 class="title titleCity">Воткинск</h2>
             <a class="cityLink" href="">Выбрать другой город</a>
@@ -1910,7 +1903,7 @@ include "include/header.php"
 </div>
 
 <div class="videoVtv">
-    <iframe width="100%" height="539" src="https://www.youtube.com/embed/bB8yC7hVkcI" frameborder="0"
+    <iframe class="videoIframe" width="100%" height="539" src="https://www.youtube.com/embed/bB8yC7hVkcI" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 </div>
@@ -2051,7 +2044,7 @@ include "include/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -2158,7 +2151,7 @@ include "include/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -2259,7 +2252,7 @@ include "include/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -2318,7 +2311,7 @@ include "include/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -2339,7 +2332,7 @@ include "include/header.php"
                     </div>
                     <div class="footerLinksParent d-block">
                         <p>Мы в соц. сетях:</p>
-                        <div class="footerIconsParent footerLeftIcon w-50">
+                        <div class="footerIconsParent footerLeftIcon">
                             <a class="footerIcons" href="/">
                                 <img src="/assets/img/vk.png" alt="">
                             </a>
@@ -2365,15 +2358,15 @@ include "include/header.php"
                             Портал не предоставляет справочной информации.
                         </p>
                     </div>
-                    <div class="footerImg">
+                    <div class="footerImgParent">
 
-                        <img src="/assets/img/footerImg.png" alt="">
+                        <img class="footerImg" src="/assets/img/footerImg.png" alt="">
                     </div>
                 </div>
 
 
                 <div class="footerLinksParent">
-                    <div class="footerIconsParent w-50">
+                    <div class="footerIconsParent">
                         <a class="footerIcons" href="/">
                             <img src="/assets/img/facebook.png" alt="">
                         </a>
@@ -2399,12 +2392,12 @@ include "include/header.php"
                             <img src="/assets/img/google+.png" alt="">
                         </a>
                     </div>
-                    <div class="footerText footerRight w-50">
+                    <div class="footerText footerRight">
                         <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
                             Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
                             Агенство креативных профессионалов</p>
                     </div>
-                    <div class="footerLinks w-50">
+                    <div class="footerLinks">
                         <a class="footerLink" href="/">О портале</a>
                         <a class="footerLink" href="/">Реклама</a>
                         <a class="footerLink" href="/">Вакансии</a>
@@ -2434,8 +2427,6 @@ include "include/header.php"
 
 </body>
 </html>
-
-
 
 
 
@@ -2824,7 +2815,7 @@ include "include/header.php"
                                 <p class="vtvText">18 ноября в 11:45</p>
                             </div>
                         </div>
-                        <div class="recordingInt line longLine">
+                        <div class="recordingInt line d-flex">
                             <button type="button">загрузить еще</button>
                         </div>
                     </div>
@@ -2834,17 +2825,17 @@ include "include/header.php"
                     <h5 class="title tagTitle">Новости партнеров</h5>
 
                     <div class="tagsContent d-flex flex-wrap">
-                        <div class="recording tagRecording d-flex align-items-center">
+                        <div class="recording tagRecording align-items-center">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня на возражения</p>
                         </div>
-                        <div class="recording tagRecording d-flex align-items-center">
+                        <div class="recording tagRecording align-items-center">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня на возражения</p>
                         </div>
-                        <div class="recording tagRecording d-flex align-items-center">
+                        <div class="recording tagRecording align-items-center">
                             <img class="partImg" src="/assets/img/chorus.jpg" alt="">
                             <p class="recordingLink">Керри объявляет Йемен
                                 о прекращении огня на возражения</p>
@@ -2892,7 +2883,7 @@ include "include/header.php"
                                 <p class="vtvText">18 ноября в 11:45</p>
                             </div>
                         </div>
-                        <div class="recordingInt line longLine">
+                        <div class="recordingInt line d-flex">
                             <button type="button">загрузить еще</button>
                         </div>
                     </div>
@@ -2981,7 +2972,7 @@ include "include/header.php"
                             </div>
                         </div>
                     </div>
-                    <div class="recordingInt line smallLine border-top-0">
+                    <div class="recordingInt d-flex line smallLine border-top-0">
                         <button type="button">загрузить еще</button>
                     </div>
 
@@ -3005,7 +2996,7 @@ include "include/header.php"
                     </div>
                     <div class="footerLinksParent d-block">
                         <p>Мы в соц. сетях:</p>
-                        <div class="footerIconsParent footerLeftIcon w-50">
+                        <div class="footerIconsParent footerLeftIcon">
                             <a class="footerIcons" href="/">
                                 <img src="/assets/img/vk.png" alt="">
                             </a>
@@ -3031,7 +3022,7 @@ include "include/header.php"
                             Портал не предоставляет справочной информации.
                         </p>
                     </div>
-                    <div class="footerImg">
+                    <div class="footerImgParent">
 
                         <img class="footerImg" src="/assets/img/footerImg.png" alt="">
                     </div>
@@ -3065,7 +3056,7 @@ include "include/header.php"
                             <img src="/assets/img/google+.png" alt="">
                         </a>
                     </div>
-                    <div class="footerText footerRight w-50">
+                    <div class="footerText footerRight">
                         <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
                             Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
                             Агенство креативных профессионалов</p>
@@ -3100,6 +3091,117 @@ include "include/header.php"
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+<header>
+    <div class="block">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+    </div>
+</header>
+
+<div class="headS d-flex">
+    <div class="container">
+        <div class="headContent d-flex align-items-center  justify-content-between">
+            <p class="versionLink">Логотип</p>
+            <div class="travel">
+                <a class="travelLink" href="">
+                    <img class="travelImg" src="/assets/img/otdix_1_01.jpg" alt="">
+                    <img class="travelImg" src="/assets/img/more_03.png" alt="">
+                </a>
+                <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
+                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
+            </div>
+            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
+            <a class="versionLink sign search" href="/">Вход</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="blocks d-flex">
+            <div class="left col-xl-3"></div>
+            <div class="footerContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
+                <div class="footerLinksParent pt-0">
+                    <div class="footerText">
+                        <p>Воткинск.NET - информационно-развлекательный портал
+                            Размещение рекламы круглосуточно: +7 (912) 441-01-25 | +7 (34145) 5-99-75
+                            Портал не несет ответственности за достоверность информации,
+                            содержащейся в рекламных объявлениях.
+                            Портал не предоставляет справочной информации.
+                        </p>
+                    </div>
+                    <div class="footerImgParent">
+
+                        <img class="footerImg" src="/assets/img/footerImg.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="footerLinksParent">
+                    <div class="footerIconsParent">
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/facebook.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/twitter.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/vk.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/od.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/youtube.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/inst.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/chell.png" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/google+.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footerText footerRight">
+                        <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
+                            Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>
+                            Агенство креативных профессионалов</p>
+                    </div>
+                    <div class="footerLinks">
+                        <a class="footerLink" href="/">О портале</a>
+                        <a class="footerLink" href="/">Реклама</a>
+                        <a class="footerLink" href="/">Вакансии</a>
+                        <a class="footerLink mobIcon" href="/">Мобильная версия</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 
 
 
