@@ -7,6 +7,10 @@ header {
   z-index: 100;
   overflow: hidden;
   height: 80px;
+
+  @media (max-width: 991px) {
+    height: auto;
+  }
 }
 
 .block {
@@ -14,6 +18,10 @@ header {
   position: relative;
   line-height: 0;
   width: 100%;
+
+  @media (max-width: 991px) {
+    padding-top: 10%;
+  }
 
 
   &:after {
@@ -25,9 +33,13 @@ header {
     top: 0;
     left: 0;
     background: transparent;
-    background-image: linear-gradient(to right, #0b2a30, transparent, #0b2a30);
+    background-image: linear-gradient(to right, #0b2a30, transparent, #0b2a30), linear-gradient(to right, #0b2a30, transparent, #0b2a30);
     opacity: 1;
     z-index: 2;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
 }
@@ -52,9 +64,14 @@ header {
     right: -14%;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 991px) {
     width: 100%;
     right: 0 !important;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
 
     &:nth-child(odd) {
       display: none;
@@ -95,7 +112,7 @@ header {
   top: 10%;
   left: 15%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     font-size: 24px;
   }
 }
@@ -109,7 +126,7 @@ header {
   left: 15%;
   font-family: $chillFont;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     font-size: 16px;
   }
 }
@@ -185,13 +202,13 @@ header {
   position: relative;
   padding-right: 62px;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     position: absolute;
     right: 0;
   }
 
   .menu {
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       display: none;
     }
   }
@@ -269,8 +286,9 @@ header {
   max-width: 321px;
   width: 100%;
   padding: 0;
+  justify-content: space-around;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -278,6 +296,10 @@ header {
 .curseValue {
   margin-right: 20px;
   position: relative;
+
+  &:first-child {
+    margin-left: 20px;
+  }
 
 }
 
@@ -328,7 +350,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: block;
   }
 
@@ -416,7 +438,7 @@ header {
   max-width: 677px;
   width: 50%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 75%;
     padding-right: 0;
   }
@@ -429,7 +451,7 @@ header {
   .blockParent {
     max-height: none;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       margin: 0 auto;
     }
 
@@ -438,14 +460,14 @@ header {
       flex-wrap: nowrap;
 
       .IntImg {
-        @media (max-width: 990px) {
+        @media (max-width: 991px) {
           max-width: none;
           margin-right: 0;
         }
       }
 
       .intLink {
-        @media (max-width: 990px) {
+        @media (max-width: 991px) {
           margin: 0 auto;
           text-align: center;
         }
@@ -542,6 +564,7 @@ input:checked + label:before {
   background-color: $blue;
   text-align: center;
 }
+
 /* news */
 
 .news {
@@ -617,8 +640,9 @@ input:checked + label:before {
   }
 }
 
+
 .newsStatEye {
-  margin-right: 15px;
+  position: relative;
 }
 
 .ImgIcon {
@@ -697,7 +721,7 @@ input:checked + label:before {
     padding: 0;
     padding-top: 5px;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       justify-content: center;
     }
   }
@@ -812,7 +836,7 @@ input:checked + label:before {
   color: $owlColor;
   font-weight: 100;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -857,7 +881,7 @@ input:checked + label:before {
     max-height: 530px;
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -963,6 +987,10 @@ input:checked + label:before {
   color: #f63219;
   font-weight: 900;
   letter-spacing: 2px;
+
+  @media (max-width: 1200px) {
+    font-size: 57px;
+  }
 }
 
 .textReg {
@@ -997,7 +1025,7 @@ input:checked + label:before {
   margin-bottom: 24px;
   margin-right: 20px;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: calc(50% - 20px);
 
     &:nth-child(2n) {
@@ -1041,7 +1069,7 @@ footer {
   max-width: 384px;
   width: 50%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -1059,7 +1087,7 @@ footer {
   width: 50%;
   text-align: right;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     text-align: left;
   }
@@ -1073,7 +1101,7 @@ footer {
 .footerIconsParent {
   width: 50%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -1114,7 +1142,7 @@ footer {
   max-width: 337px;
   width: 50%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     max-width: none;
     text-align: left;
@@ -1308,7 +1336,7 @@ footer {
 
 .con {
   .rightTitle {
-    @media (max-width:990px) {
+    @media (max-width:991px) {
       display: none;
     }
   }
@@ -1320,7 +1348,7 @@ footer {
 
   .title {
     font-size: 23px;
-    padding: 0 5px;
+    padding-right: 5px;
   }
 
 }
@@ -1331,7 +1359,7 @@ footer {
   background: transparent !important;
   padding: 0 !important;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     justify-content: center;
   }
 
@@ -1340,11 +1368,11 @@ footer {
   }
 
   .vtvText {
-    margin-right: 27px;
+    margin-right: 48px;
   }
 
   .newsStatEye {
-    margin-right: 14px;
+    margin-right: 27px;
   }
 }
 
@@ -1418,12 +1446,12 @@ footer {
   &:nth-child(4n) {
     margin-right: 0;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       margin-right: 42px;
     }
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: calc(33.33333% - 29px);
     margin-right: 42px;
 
@@ -1491,7 +1519,7 @@ footer {
     width: calc(25% - 40px);
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: calc(50% - 20px);
 
     &:nth-child(2n) {
@@ -1589,7 +1617,7 @@ footer {
         margin-right: 0;
       }
 
-      @media (max-width: 990px) {
+      @media (max-width: 991px) {
         width: 100%;
         margin-right: 0;
       }
@@ -1658,18 +1686,24 @@ footer {
   }
 }
 
+.hiddCon {
+  @media (max-width: 760px) {
+  padding: 0 !important;
+  }
+}
+
 .openH {
   display: block;
 }
 
 .hiddenHeader {
   margin: 0 auto;
-  height: 60px;
+  height: 57px;
   max-width: 677px;
   width: 50%;
   padding-right: 62px;
   
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     max-width: none;
     width: 100%;
     justify-content: center;
@@ -1677,12 +1711,17 @@ footer {
 
   @media (max-width: 540px) {
     font-size: 12px;
+    justify-content: space-around;
   }
 }
 
 .hiddenTel {
   max-width: 148px;
   margin: 0 25px;
+
+  @media (max-width: 540px) {
+    display: none;
+  }
 }
 
 .hiddenLink {
@@ -1692,6 +1731,9 @@ footer {
 /* hiddenLeft*/
 
 .Opros {
+
+  border-bottom: 1px solid $line;
+
   .title {
     color: $blue;
     margin-bottom: 15px;
@@ -1704,6 +1746,14 @@ footer {
 
   .hiddenIn {
     margin-bottom: 20px;
+  }
+
+  .hiddenImg {
+    max-width: 120px;
+    width: 100%;
+    height: 91px;
+    display: block;
+    margin-left: auto;
   }
 }
 
@@ -1727,9 +1777,12 @@ footer {
 }
 
 .progHiddenParent {
-  height: 286px;
   position: relative;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    height: auto;
+  }
 }
 
 .progHidden {
@@ -1738,40 +1791,55 @@ footer {
   padding-left: 23px;
   padding-top: 10px;
   padding-right: 10px;
-  width: 25%;
+  width: 25.1%;
   height: 169px;
 
-  &:nth-child(3) {
-    height: 120px;
-  }
-
-  &:nth-child(4) {
-    height: 100%;
-  }
-
-  &:nth-child(5) {
-    position: absolute;
-    left: 0;
-    top: 59%;
+  &:nth-child(3n+3),&:nth-child(3n+4),&:nth-child(3n+5) {
     height: 120px;
   }
 
   &:nth-child(6) {
-    position: absolute;
-    left: 25%;
-    top: 59%;
-    height: 120px;
+    margin-top: -49px;
+    height: 169px;
   }
 
-  &:nth-child(7) {
+  &:last-child {
     position: absolute;
-    left: 50%;
-    top: 41.6%;
+    height: 289px;
+    right: 0;
   }
 
+
+  
   @media (max-width: 1200px) {
     position: static;
+
+    &:nth-child(odd) {
+      width: 40%;
+    }
+
+    &:nth-child(even) {
+      width: 35%;
+      margin: 0;
+    }
+
+    &:nth-child(6) {
+      height: 120px;
+    }
+
+    &:last-child {
+      width: 25%;
+    }
+
+    @media (max-width: 540px) {
+      width: 100% !important;
+      position: static !important;
+      text-align: center;
+    }
+
+
   }
+
 
   .title {
     font-size: 13px;
@@ -1780,6 +1848,10 @@ footer {
   .hiddenLink {
     font-size: 11px;
     display: block;
+
+    @media (max-width: 540px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -1830,6 +1902,9 @@ footer {
 
 
 
+
+
+
 .circleLink {
 
   &:after {
@@ -1851,7 +1926,8 @@ footer {
     left: 0;
     background-image: url("../img/mapIcon.png");
     background-repeat: no-repeat;
-    padding: 16px;
+    width: 29px;
+    height: 33px;
   }
 }
 
@@ -1859,15 +1935,17 @@ footer {
 
   &:before {
     content: "";
-    background-image: url("/assets/img/doll.png");
+    background-image: url(/assets/img/doll.png);
     background-repeat: no-repeat;
     background-size: 90% 85%;
     background-position: center;
-    padding: 0 11px;
-    margin-right: 6px;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 21px;
+    margin-left: -26px;
   }
 
 }
@@ -1876,15 +1954,16 @@ footer {
 
   &:before {
     content: "";
-    background-image: url("/assets/img/euro.png");
+    background-image: url(/assets/img/euro.png);
     background-repeat: no-repeat;
     background-size: 70% 80%;
     background-position: center;
-    padding: 0 11px;
-    margin-right: 6px;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    width: 20px;
+    position: absolute;
+    height: 21px;
+    margin-left: -27px;
   }
 
 }
@@ -1892,41 +1971,56 @@ footer {
 .neft {
   &:before {
     content: "";
-    background-image: url("/assets/img/neft1.png");
+    background-image: url(/assets/img/neft1.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
     padding: 0 11px;
     margin-right: 6px;
+    background-position: center;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    width: 20px;
+    position: absolute;
+    height: 21px;
+    margin-left: -27px;
   }
 }
 
 .arrowDown {
   &:after {
     content: "";
-    background-image: url("/assets/img/arrowDown.png");
+    background-image: url(/assets/img/arrowDown.png);
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 5px;
     position: absolute;
     top: 6px;
+    width: 7px;
+    height: 11px;
     margin-left: 10px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }
 
 .arrowTop {
   &:after {
     content: "";
-    background-image: url("/assets/img/arrowTop.png");
+    background-image: url(/assets/img/arrowTop.png);
+    padding: 5px;
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 5px;
     position: absolute;
     top: 6px;
+    width: 7px;
+    height: 11px;
     margin-left: 10px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
   }
 }
 
@@ -1976,11 +2070,14 @@ footer {
 
   &:before {
     content: "";
-    background-image: url("/assets/img/camera.png");
+    background-image: url(/assets/img/camera.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 0 10px;
+    background-size: auto;
     margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: -26px;
   }
 }
 
@@ -1998,27 +2095,36 @@ footer {
 
 .eye {
 
+  margin-left: 26px;
+
   &:before {
     content: "";
-    background-image: url("/assets/img/eye.png");
+    background-image: url(/assets/img/eye.png);
     margin-right: 3px;
     background-size: auto;
     background-repeat: no-repeat;
-    padding: 0 12px;
-    font-size: 10px;
+    font-size: 12px;
+    width: 23px;
+    height: 13px;
+    position: absolute;
+    margin-left: -27px;
   }
 }
 
 .comm {
 
+  margin-left: 26px;
+
   &:before {
     content: "";
-    background-image: url("/assets/img/comm.png");
+    background-image: url(/assets/img/comm.png);
     background-size: auto;
     background-repeat: no-repeat;
-    padding: 0 9px;
     font-size: 12px;
-    margin-left: 13px;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    margin-left: -18px;
   }
 }
 
@@ -2245,6 +2351,8 @@ footer {
 
 
 
+
+
 button {
   background-color: transparent;
   font-size: 13px;
@@ -2291,6 +2399,7 @@ button {
   background-color: #038fbf;
   text-shadow: none;
   font-weight: 400;
+  max-width: 150px;
 
   &:hover {
     background-color: #ecf16b;
@@ -2313,12 +2422,4 @@ button {
   background-color: $blue;
   color: $white;
   border-radius: 3px;
-}
-
-.hiddenImg {
-  max-width: 120px;
-  width: 100%;
-  height: 91px;
-  float: right;
-
 }
