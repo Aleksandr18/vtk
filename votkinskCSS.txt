@@ -185,6 +185,10 @@ header {
   width: 100%;
   padding: 0;
   padding-left: 50px;
+
+  .title {
+    text-align: left;
+  }
 }
 
 .cityLink {
@@ -313,6 +317,10 @@ header {
   border-right: 1px solid $line;
   padding: 0;
 
+  .newsImg {
+    padding-top: 100%;
+  }
+
   @media (max-width: 760px) {
     display: none;
   }
@@ -329,6 +337,10 @@ header {
   overflow: hidden;
   overflow-y: auto;
   color: $navColor;
+
+  @media (max-width: 1200px) {
+    max-height: none !important;
+  }
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -375,6 +387,7 @@ header {
     max-width: none;
     height: auto;
     margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -463,6 +476,7 @@ header {
         @media (max-width: 991px) {
           max-width: none;
           margin-right: 0;
+          margin-bottom: 15px;
         }
       }
 
@@ -496,15 +510,6 @@ header {
 .calLink {
   color: $black;
   margin-left: 20px;
-
-  &:after {
-    content: "";
-    background-image: url("/assets/img/cal.png");
-    background-size: auto;
-    padding: 4px 12px;
-    margin-left: 20px;
-    background-repeat: no-repeat;
-  }
 }
 
 
@@ -517,6 +522,18 @@ header {
   flex-direction: row;
   align-items: baseline;
   padding: 15px 0;
+
+  .title {
+    @media (max-width: 1200px) {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+
 }
 
 input[type="checkbox"] {
@@ -535,6 +552,7 @@ label {
   color: $labelColor;
   margin-right: 13px;
   margin-bottom: 0;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -559,10 +577,36 @@ label {
 }
 
 input:checked + label:before {
-  content: "\2714";
-  font-size: 10px;
   background-color: $blue;
-  text-align: center;
+  position: relative;
+}
+
+input:checked + label span:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 6px;
+  height: 2px;
+  background: $black;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+input:checked + label span:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 11px;
+  height: 2px;
+  background: $black;
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
 
 /* news */
@@ -602,6 +646,7 @@ input:checked + label:before {
     background: rgba(3, 15, 25, 0.6);
     padding: 5px 10px;
     color: $white;
+    justify-content: space-between;
   }
 }
 
@@ -643,6 +688,7 @@ input:checked + label:before {
 
 .newsStatEye {
   position: relative;
+  margin-right: 5px;
 }
 
 .ImgIcon {
@@ -720,10 +766,6 @@ input:checked + label:before {
     background: transparent;
     padding: 0;
     padding-top: 5px;
-
-    @media (max-width: 991px) {
-      justify-content: center;
-    }
   }
 
 }
@@ -914,18 +956,6 @@ input:checked + label:before {
 .userName {
   color: $navColor;
 
-
-  &:before {
-    content: "";
-    background-image: url("/assets/img/user.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 11px;
-    height: 12px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
 }
 
 .advText {
@@ -1024,6 +1054,7 @@ input:checked + label:before {
   font-size: 15px;
   margin-bottom: 24px;
   margin-right: 20px;
+  position: relative;
 
   @media (max-width: 991px) {
     width: calc(50% - 20px);
@@ -1103,7 +1134,7 @@ footer {
 
   @media (max-width: 991px) {
     width: 100%;
-    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -1116,6 +1147,10 @@ footer {
   text-align: center;
   margin-right: 10px;
   margin-bottom: 10px;
+
+  &:hover {
+    filter: invert(1);
+  }
 
   &:last-child {
     margin-right: 0;
@@ -1160,7 +1195,6 @@ footer {
 
 .calNews {
   .calText {
-    margin-left: 12px;
     position: relative;
     font-family: $tahomaFont;
     font-style: italic;
@@ -1203,11 +1237,21 @@ footer {
   margin: 0 14px;
   max-width: 252px;
   width: 100%;
+  margin-bottom: 15px;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+  }
 }
 
 .inVideo {
   max-width: 419px;
   width: 100%;
+  margin-bottom: 15px;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+  }
 }
 
 .newsText {
@@ -1219,15 +1263,31 @@ footer {
 .tags {
   padding: 20px 0;
   border-bottom: 1px solid $line;
-
+  flex-wrap: wrap;
   .title {
     margin-right: 28px;
     font-size: 14px;
+    
+    @media (max-width: 991px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 
   .tagText {
     margin-right: 20px;
     font-size: 12px;
+  }
+
+  .footerIconsParent {
+    .footerIcons {
+      background-color: transparent;
+
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -1345,6 +1405,7 @@ footer {
 
 .vtvContent {
   padding: 20px 0;
+  flex-wrap: wrap;
 
   .title {
     font-size: 23px;
@@ -1368,13 +1429,22 @@ footer {
   }
 
   .vtvText {
-    margin-right: 48px;
+    margin-right: 39px;
   }
 
   .newsStatEye {
     margin-right: 27px;
   }
+
+  .newsStatComm {
+    margin-right: 27px;
+
+    @media (max-width: 540px) {
+      margin-right: 0;
+    }
+  }
 }
+
 
 .commImg {
   max-width: 643px;
@@ -1383,7 +1453,7 @@ footer {
 
 .video {
   padding: 28px 0;
-  border-top: 2px solid $line;
+  border-top: 3px solid $line;
 
   .videoTitle {
     padding-bottom: 25px;
@@ -1548,6 +1618,10 @@ footer {
 
 .leftMiddle {
 
+  @media (max-width: 991px) {
+    padding: 0;
+  }
+
   .video {
     .videoToday {
       padding-right: 15px;
@@ -1668,7 +1742,6 @@ footer {
 
     .left {
       padding-top: 44px;
-      padding-right: 25px;
       border-bottom: 1px solid $line;
     }
 
@@ -1754,6 +1827,7 @@ footer {
     height: 91px;
     display: block;
     margin-left: auto;
+    margin-right: 28px;
   }
 }
 
@@ -1903,8 +1977,6 @@ footer {
 
 
 
-
-
 .circleLink {
 
   &:after {
@@ -1924,7 +1996,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/mapIcon.png");
+    background-image: url("../img/svg/map.svg");
     background-repeat: no-repeat;
     width: 29px;
     height: 33px;
@@ -1935,9 +2007,9 @@ footer {
 
   &:before {
     content: "";
-    background-image: url(/assets/img/doll.png);
+    background-image: url("/assets/img/svg/doll.svg");
     background-repeat: no-repeat;
-    background-size: 90% 85%;
+    background-size: auto;
     background-position: center;
     border-radius: 50%;
     background-color: #dedede;
@@ -1954,9 +2026,9 @@ footer {
 
   &:before {
     content: "";
-    background-image: url(/assets/img/euro.png);
+    background-image: url("/assets/img/svg/eu.svg");
     background-repeat: no-repeat;
-    background-size: 70% 80%;
+    background-size: auto;
     background-position: center;
     border-radius: 50%;
     background-color: #dedede;
@@ -1971,7 +2043,7 @@ footer {
 .neft {
   &:before {
     content: "";
-    background-image: url(/assets/img/neft1.png);
+    background-image: url("/assets/img/svg/neft.svg");
     background-repeat: no-repeat;
     background-size: auto;
     padding: 0 11px;
@@ -2027,7 +2099,7 @@ footer {
 .glasses {
   &:before {
     content: "";
-    background-image: url("../img/glasses.png");
+    background-image: url("/assets/img/svg/gl.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 90% 100%;
@@ -2043,10 +2115,10 @@ footer {
 .search {
   &:before {
     content: "";
-    background-image: url("../img/search.png");
+    background-image: url("/assets/img/svg/search.svg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 90% 100%;
+    background-size: auto;
     padding: 0 12px;
     margin-right: 21px;
 
@@ -2056,11 +2128,22 @@ footer {
   }
 }
 
+.calLink {
+  &:after {
+    content: "";
+    background-image: url("/assets/img/svg/call.svg");
+    background-size: auto;
+    padding: 4px 12px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+  }
+}
+
 .pal {
 
   &:before {
     content: "";
-    background-image: url("/assets/img/pal.png");
+    background-image: url("/assets/img/svg/palm.svg");
     background-repeat: no-repeat;
     padding: 2px 13px;
   }
@@ -2070,14 +2153,24 @@ footer {
 
   &:before {
     content: "";
-    background-image: url(/assets/img/camera.png);
+    background-image: url("/assets/img/svg/cam.svg");
     background-repeat: no-repeat;
     background-size: auto;
+    padding: 0 15px;
+  }
+}
+
+.userName {
+  &:before {
+    content: "";
+    background-image: url("/assets/img/svg/user.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 11px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 5px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    margin-left: -26px;
   }
 }
 
@@ -2099,7 +2192,7 @@ footer {
 
   &:before {
     content: "";
-    background-image: url(/assets/img/eye.png);
+    background-image: url("/assets/img/svg/eye.svg");
     margin-right: 3px;
     background-size: auto;
     background-repeat: no-repeat;
@@ -2107,6 +2200,7 @@ footer {
     width: 23px;
     height: 13px;
     position: absolute;
+    top: 3px;
     margin-left: -27px;
   }
 }
@@ -2114,16 +2208,18 @@ footer {
 .comm {
 
   margin-left: 26px;
+  position: relative;
 
   &:before {
     content: "";
-    background-image: url(/assets/img/comm.png);
+    background-image: url("/assets/img/svg/comm.svg");
     background-size: auto;
     background-repeat: no-repeat;
     font-size: 12px;
     width: 15px;
     height: 18px;
     position: absolute;
+    top: 2px;
     margin-left: -18px;
   }
 }
@@ -2163,7 +2259,7 @@ footer {
 
   &:after {
     content: "";
-    background-image: url("/assets/img/mobIcon.png");
+    background-image: url("/assets/img/social/footer/tel.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6px 15px;
@@ -2212,7 +2308,8 @@ footer {
     display: inline-block;
     height: 10px;
     border-right: 1px solid $labelColor;
-    margin-left: 11px;
+    margin-left: 17px;
+    margin-right: 11px;
     transform: rotate(45deg);
 
   }
@@ -2343,6 +2440,114 @@ footer {
 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  color: $defaultColor;
+  font-family: $defaultFont;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+ul, li, p {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.title {
+  color: $black;
+  font-weight: bold;
+  font-size: 16px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+time {
+  color: $blue;
+  font-weight: 700;
+}
+
+button,
+button:before,
+button:focus {
+  outline: none;
+}
+
+input,
+input:before,
+input:focus {
+  outline: none;
+}
+
+.transLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.rybbuImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
 
 
 
