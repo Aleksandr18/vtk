@@ -313,12 +313,6 @@ header {
   }
 }
 
-.blockTitle {
-  display: flex;
-  height: 76px;
-  align-items: center;
-}
-
 .blockParent {
   max-height: 575px;
   overflow: hidden;
@@ -421,15 +415,17 @@ header {
 }
 
 .recordingLink {
-  font-size: 14px;
+  font-size: 15px;
   max-width: 177px;
   width: 100%;
   font-family: 'Tahoma Regular';
+  line-height: 18px;
 }
 
 .recordingAlllink {
   color: $blue;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 /* middle */
@@ -773,6 +769,7 @@ input:checked + label span:after {
 
 .intLink {
   max-width: 455px;
+  margin-bottom: 12px;
 }
 
 .statInt {
@@ -1040,9 +1037,10 @@ input:checked + label span:after {
 .yanText {
   width: calc(25% - 40px);
   font-size: 15px;
-  margin-bottom: 24px;
   margin-right: 20px;
   position: relative;
+  font-family: "Tahoma";
+  margin-bottom: 24px;
 
   @media (max-width: 991px) {
     width: calc(50% - 20px);
@@ -1061,9 +1059,10 @@ input:checked + label span:after {
 
 }
 
+
 .rec {
   font-size: 11px;
-  color: $navColor;
+  color: $labelColor;
 }
 
 /* footer */
@@ -1087,6 +1086,7 @@ footer {
   font-size: 11px;
   max-width: 384px;
   width: 50%;
+  line-height: 13px;
 
   @media (max-width: 991px) {
     width: 100%;
@@ -1164,6 +1164,7 @@ footer {
   text-align: right;
   max-width: 337px;
   width: 50%;
+  line-height: 15px;
 
   @media (max-width: 991px) {
     width: 100%;
@@ -1208,6 +1209,7 @@ footer {
 
 .autorText {
   padding-left: 15px;
+  font-family: $defaultFont;
 
   .title {
     font-size: 13px !important;
@@ -1246,6 +1248,12 @@ footer {
   padding: 25px 0;
   border-bottom: 3px solid $line;
   font-size: 15px;
+}
+
+.storyText {
+  max-width: 876px;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 .tags {
@@ -1377,6 +1385,7 @@ footer {
   .newsConText {
     font-family: 'Tahoma';
     font-size: 13px;
+    line-height: 17px;
   }
 }
 
@@ -1786,7 +1795,7 @@ footer {
 }
 
 .hiddenLink {
-  color: $navColor;
+  color: $labelColor;
 }
 
 /* hiddenLeft*/
@@ -1955,6 +1964,8 @@ footer {
     border-radius: 10px;
   }
 }
+
+
 
 
 
@@ -2441,7 +2452,6 @@ footer {
 
 
 
-
 body {
 
   margin: 0;
@@ -2539,13 +2549,6 @@ input:focus {
 
 
 
-
-
-
-
-
-
-
 button {
   background-color: transparent;
   font-size: 13px;
@@ -2554,10 +2557,10 @@ button {
   border-radius: 5px;
   padding: 6.5px 17.5px;
   color: $navColor;
-  border: 1px solid transparent;
+  border: 1px solid $line;
 
   &:hover {
-    border: 1px solid $line;
+    border: 1px solid transparent;
   }
 }
 
@@ -2603,10 +2606,10 @@ button {
 .presentBtn {
   color: $blue;
   padding: 6.5px 29.5px;
-  border: 1px solid transparent;
+  border: 1px solid $blue;
 
   &:hover {
-    border: 1px solid $blue;
+    border: 1px solid transparent;
   }
 }
 
@@ -2616,142 +2619,3 @@ button {
   color: $white;
   border-radius: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* + site */
-$time:0.5s;
-$opacity:0.8;
-/* - site */
-
-$white:#ffffff;
-$light-gray:#F4F4F4;
-$gray-100: #DDDDDD !default;
-$gray-200: #F9F9F9 !default;
-
-$gray-300:  rgb(233, 233, 233) !default;  // border
-$gray-400: #E4E4E4 !default;
-$gray-600: #8d8d8d !default; // secondary
-$gray-700: #8E8E8E;
-$gray-750: #7d7d7d !default;
-$gray-800: #626262 !default;
-//$gray-800: #3D4146 !default;
-//$gray-900: #1A1C1D !default;
-$black:#000000;
-$orange-active:#D17A39;
-$blue: #01a2d9;
-$dark-blue: #0190a1;
-$orange:  #F47B20 !default;
-$orange-light: #f3924a;
-$orange-hover: #F9B684;
-$red:#ff6060;
-$green: #34a35e;
-$gradient: linear-gradient(180deg, #F47B20 0%, #F05600 100%);
-$bgGray: #E8E8E8;
-
-$defaultColor: #333333;
-$navColor: #666666;
-$labelColor: #999;
-$line: #d5d5d5;
-$newsColorRed: #f63219;
-$newsColorOrange: #ff9900;
-$carouselColor: #f3f3f3;
-$footerColor: #151515;
-$footerText: #575757;
-$scrollColor: #bebebe;
-$owlColor: #131313;
-
-/* + fonts */
-//$body-bg: #ededed !default;
-$body-color: $black;
-$font-size-base:0.875rem;
-//$line-height-base:1.5;
-$link-hover-color: $orange;
-$ff-bold: 'Magrit-Bold';
-$ff-light: 'Magrit-Regular';
-$primary:       $orange !default;
-$secondary:     $light-gray !default;
-$font-family-base: $ff-light;
-$defaultFont: 'Open Sans', sans-serif;
-$chillFont: 'Lobster', cursive;
-$tahomaFont: 'Tahoma';
-/* - fonts */
-
-/* + link */
-$link-color:$black;
-$link-hover-color:$orange;
-/* - link */
-$container-max-widths: (
-        sm: 575px,
-        md: 800px,
-        lg: 1024px,
-        xl: 1170px
-);
-/* + btn */
-$btn-padding-y:0.625rem;
-$btn-padding-x:1.5rem;
-$btn-font-family:$font-family-base;
-$btn-font-size:1rem;
-$btn-line-height:1.125rem;
-$btn-border-radius:30px;
-$btn-active-box-shadow:0;
-$btn-disabled-opacity:1;
-
-$btn-padding-y-sm:     0.375rem;
-$btn-padding-x-sm:     1.25rem;
-$btn-font-size-sm:     0.875rem;
-$btn-line-height-sm:   1rem;
-$btn-border-radius-sm: 30px;
-
-/* - btn */
-
-/* + input */
-$input-padding-y:0;
-$input-padding-x:1.25rem;
-$input-font-family:$font-family-base;
-$input-font-size:1rem;
-$input-height:2.5rem;
-$input-focus-box-shadow:0;
-$input-border-color:transparent;
-
-$input-placeholder-color:$black;
-$input-color:$black;
-$input-border-width:2px;
-$input-border-radius:30px;
-$input-focus-border-color:$black;
-$input-bg:$white;
-
-
-/* -input */
-
-/* + checkbox */
-//$custom-checkbox-indicator-border-radius:3px;
-//$custom-checkbox-indicator-icon-checked:  url("../img/check-black.svg");
-/* - checkbox */
-
-/* modal */
-//$modal-md:                          542px !default;
-//$modal-backdrop-bg:                 #222 !default;
-//$modal-backdrop-opacity:            .8 !default;
-/* - modal */
-
-
-
-
-
-
-
-
-
-

@@ -800,30 +800,30 @@
                 <a class="close" href="/"></a>
 
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
+                </div>
+                <div class="yanText">
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
-                    <p class="rec">реклама</p>
-                    <a href="/" class="transLink"></a>
-                </div>
-                <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
@@ -853,25 +853,6 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1302,18 +1283,18 @@ include "include/header.php"
                     <button class="newsBtn" type="button">подписаться</button>
                 </div>
                 <div class="newsText">
-                    <p>Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
+                    <p class="storyText">Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
                         Музей-усадьба П.И. Чайковского объявляет конкурс декоративно-прикладного искусства «Подарок
                         Дроссельмейера». По условиям конкурса, готовая работа должна представлять собой куклу-персонаж
-                        одного из балетов П.И. Чайковского:
+                        одного из балетов П.И. Чайковского:<br>
                         Балет «Лебединое озеро»: Одетта - белый лебедь, Одиллия - черный лебедь, принц Зигфрид, Ротбарт
                         - злой волшебник, король и королева. Балет «Щелкунчик»: девочка Мари, Дроссельмейер, Мышиный<br>
-                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.
+                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.<br>
                         Балет «Спящая красавица»: Аврора, принц Дезире, добрые феи и злая Фея Карабос, гости на свадьбе:<br>
                         Синяя борода, Кот в сапогах, Золушка, красная шапочка и др. Для участия в конкурсе принимаются
                         только индивидуальные работы. Допускается использование любых материалов. Размер работы должен
-                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).
-                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.
+                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).<br>
+                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.<br>
                         Справки по телефону: 8-919-919-40-71. </p>
                 </div>
 
@@ -1658,7 +1639,7 @@ include "include/header.php"
                             Кирби.</p>
                     </div>
                 </div>
-                <div class="recordingInt d-flex line">
+                <div class="recordingInt d-flex line pt-0">
                     <button type="button">загрузить еще</button>
                 </div>
 
@@ -1726,14 +1707,6 @@ include "include/footer.php";
 
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
@@ -2497,20 +2470,6 @@ include "include/header.php"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html>
 <head>
@@ -2760,18 +2719,18 @@ include "include/header.php"
                     </div>
                 </div>
                 <div class="newsText">
-                    <p>Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
+                    <p class="storyText">Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
                         Музей-усадьба П.И. Чайковского объявляет конкурс декоративно-прикладного искусства «Подарок
                         Дроссельмейера». По условиям конкурса, готовая работа должна представлять собой куклу-персонаж
                         одного из балетов П.И. Чайковского:<br>
                         Балет «Лебединое озеро»: Одетта - белый лебедь, Одиллия - черный лебедь, принц Зигфрид, Ротбарт
                         - злой волшебник, король и королева. Балет «Щелкунчик»: девочка Мари, Дроссельмейер, Мышиный<br>
-                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.
+                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.<br>
                         Балет «Спящая красавица»: Аврора, принц Дезире, добрые феи и злая Фея Карабос, гости на свадьбе:<br>
                         Синяя борода, Кот в сапогах, Золушка, красная шапочка и др. Для участия в конкурсе принимаются
                         только индивидуальные работы. Допускается использование любых материалов. Размер работы должен
-                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).
-                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.
+                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).<br>
+                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.<br>
                         Справки по телефону: 8-919-919-40-71. </p>
                 </div>
                 <div class="rad">
@@ -3187,6 +3146,36 @@ include "include/header.php"
 
 
 
+<header>
+    <div class="block">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+        <img class="adv" src="/assets/img/advCar.png" alt="">
+    </div>
+</header>
+
+<div class="headS d-flex">
+    <div class="container">
+        <div class="headContent d-flex align-items-center  justify-content-between">
+            <p class="versionLink">Логотип</p>
+            <div class="travel">
+                <a class="travelLink" href="">
+                    <img class="rybbuImg" src="/assets/img/mr321_03.png" alt="">
+                </a>
+                <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
+                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
+            </div>
+            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
+            <a class="versionLink sign search" href="/">Вход</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
 <footer>
     <div class="container">
@@ -3269,32 +3258,128 @@ include "include/header.php"
 
 
 
+/* + site */
+$time:0.5s;
+$opacity:0.8;
+/* - site */
+
+$white:#ffffff;
+$light-gray:#F4F4F4;
+$gray-100: #DDDDDD !default;
+$gray-200: #F9F9F9 !default;
+
+$gray-300:  rgb(233, 233, 233) !default;  // border
+$gray-400: #E4E4E4 !default;
+$gray-600: #8d8d8d !default; // secondary
+$gray-700: #8E8E8E;
+$gray-750: #7d7d7d !default;
+$gray-800: #626262 !default;
+//$gray-800: #3D4146 !default;
+//$gray-900: #1A1C1D !default;
+$black:#000000;
+$orange-active:#D17A39;
+$blue: #01a2d9;
+$dark-blue: #0190a1;
+$orange:  #F47B20 !default;
+$orange-light: #f3924a;
+$orange-hover: #F9B684;
+$red:#ff6060;
+$green: #34a35e;
+$gradient: linear-gradient(180deg, #F47B20 0%, #F05600 100%);
+$bgGray: #E8E8E8;
+
+$defaultColor: #333333;
+$navColor: #666666;
+$labelColor: #999;
+$line: #d5d5d5;
+$newsColorRed: #f63219;
+$newsColorOrange: #ff9900;
+$carouselColor: #f3f3f3;
+$footerColor: #151515;
+$footerText: #575757;
+$scrollColor: #bebebe;
+$owlColor: #131313;
+
+/* + fonts */
+//$body-bg: #ededed !default;
+$body-color: $black;
+$font-size-base:0.875rem;
+//$line-height-base:1.5;
+$link-hover-color: $orange;
+$ff-bold: 'Magrit-Bold';
+$ff-light: 'Magrit-Regular';
+$primary:       $orange !default;
+$secondary:     $light-gray !default;
+$font-family-base: $ff-light;
+$defaultFont: 'Open Sans', sans-serif;
+$chillFont: 'Lobster', cursive;
+$tahomaFont: 'Tahoma';
+/* - fonts */
+
+/* + link */
+$link-color:$black;
+$link-hover-color:$orange;
+/* - link */
+$container-max-widths: (
+        sm: 575px,
+        md: 800px,
+        lg: 1024px,
+        xl: 1170px
+);
+/* + btn */
+$btn-padding-y:0.625rem;
+$btn-padding-x:1.5rem;
+$btn-font-family:$font-family-base;
+$btn-font-size:1rem;
+$btn-line-height:1.125rem;
+$btn-border-radius:30px;
+$btn-active-box-shadow:0;
+$btn-disabled-opacity:1;
+
+$btn-padding-y-sm:     0.375rem;
+$btn-padding-x-sm:     1.25rem;
+$btn-font-size-sm:     0.875rem;
+$btn-line-height-sm:   1rem;
+$btn-border-radius-sm: 30px;
+
+/* - btn */
+
+/* + input */
+$input-padding-y:0;
+$input-padding-x:1.25rem;
+$input-font-family:$font-family-base;
+$input-font-size:1rem;
+$input-height:2.5rem;
+$input-focus-box-shadow:0;
+$input-border-color:transparent;
+
+$input-placeholder-color:$black;
+$input-color:$black;
+$input-border-width:2px;
+$input-border-radius:30px;
+$input-focus-border-color:$black;
+$input-bg:$white;
 
 
-<header>
-    <div class="block">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-        <img class="adv" src="/assets/img/advCar.png" alt="">
-    </div>
-</header>
+/* -input */
 
-<div class="headS d-flex">
-    <div class="container">
-        <div class="headContent d-flex align-items-center  justify-content-between">
-            <p class="versionLink">Логотип</p>
-            <div class="travel">
-                <a class="travelLink" href="">
-                    <img class="rybbuImg" src="/assets/img/mr321_03.png" alt="">
-                </a>
-                <h1 class="travelHeader">Путешествуй за 30 тыс. рублей</h1>
-                <p class="travelText">Ранее бронирование только у нас! <a class="otLink circleLink" href="/">подробнее</a></p>
-            </div>
-            <a class="versionLink glasses" href="/">Версия для слабовидящих</a>
-            <a class="versionLink sign search" href="/">Вход</a>
-        </div>
-    </div>
-</div>
+/* + checkbox */
+//$custom-checkbox-indicator-border-radius:3px;
+//$custom-checkbox-indicator-icon-checked:  url("../img/check-black.svg");
+/* - checkbox */
+
+/* modal */
+//$modal-md:                          542px !default;
+//$modal-backdrop-bg:                 #222 !default;
+//$modal-backdrop-opacity:            .8 !default;
+/* - modal */
+
+
+
+
+
+
+
 
 
 
@@ -3327,4 +3412,3 @@ $(document).ready(function () {
         items: 1
     });
 });
-
