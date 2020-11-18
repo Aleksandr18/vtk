@@ -55,7 +55,7 @@ include "include/modals/header.php"
     </div>
 
     <div class="hidden">
-        <div class="container">
+        <div class="container hiddCon">
             <div class="hiddenHeader d-flex col-xl-6 align-items-center">
                 <a class="hiddenLink" href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
                 <div class="hiddenTel">
@@ -76,13 +76,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden1"><label for="hidden1">Да</label>
-                            <input type="checkbox" id="hidden2"><label for="hidden2">Нет</label>
-                            <input type="checkbox" id="hidden3"><label for="hidden3">Мне все равно</label>
-                            <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden1"><label for="hidden1"><span>Да</span></label>
+                            <input type="checkbox" id="hidden2"><label for="hidden2"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden3"><label for="hidden3"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden4"><label for="hidden4"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="btnHidden d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -123,22 +123,7 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Заказать видео</a>
 
                         </div>
-                        <div class="progHidden">
-                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
-                            <a class="hiddenLink" href="/">Овен</a>
-                            <a class="hiddenLink" href="/">Телец</a>
-                            <a class="hiddenLink" href="/">Близнецы</a>
-                            <a class="hiddenLink" href="/">Рак</a>
-                            <a class="hiddenLink" href="/">Лев</a>
-                            <a class="hiddenLink" href="/">Дева</a>
-                            <a class="hiddenLink" href="/">Весы</a>
-                            <a class="hiddenLink" href="/">Скорпион</a>
-                            <a class="hiddenLink" href="/">Стрелец</a>
-                            <a class="hiddenLink" href="/">Козерог</a>
-                            <a class="hiddenLink" href="/">Водолей</a>
-                            <a class="hiddenLink" href="/">Рыбы</a>
 
-                        </div>
                         <div class="progHidden">
                             <h4 class="title smallCircle smallCircleOB">Объявления</h4>
                             <a class="hiddenLink" href="/">Сегодня</a>
@@ -163,6 +148,27 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Разместить</a>
 
                         </div>
+
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
+                            <a class="hiddenLink" href="/">Овен</a>
+                            <a class="hiddenLink" href="/">Телец</a>
+                            <a class="hiddenLink" href="/">Близнецы</a>
+                            <a class="hiddenLink" href="/">Рак</a>
+                            <a class="hiddenLink" href="/">Лев</a>
+                            <a class="hiddenLink" href="/">Дева</a>
+                            <a class="hiddenLink" href="/">Весы</a>
+                            <a class="hiddenLink" href="/">Скорпион</a>
+                            <a class="hiddenLink" href="/">Стрелец</a>
+                            <a class="hiddenLink" href="/">Козерог</a>
+                            <a class="hiddenLink" href="/">Водолей</a>
+                            <a class="hiddenLink" href="/">Рыбы</a>
+
+                        </div>
+
+                    </div>
+                    <div class="recHidden">
+                        <img class="recHiddenImg" src="/assets/img/shop.jpg" alt="">
                     </div>
 
                 </div>
@@ -174,13 +180,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden5"><label for="hidden5">Да</label>
-                            <input type="checkbox" id="hidden6"><label for="hidden6">Нет</label>
-                            <input type="checkbox" id="hidden7"><label for="hidden7">Мне все равно</label>
-                            <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden5"><label for="hidden5"><span>Да</span></label>
+                            <input type="checkbox" id="hidden6"><label for="hidden6"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden7"><label for="hidden7"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden8"><label for="hidden8"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -252,7 +258,9 @@ include "include/modals/header.php"
                 <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
-                <img class="advImg" src="/assets/img/term.jpg" alt="">
+                <div class="newsImg">
+                    <img class="rybbuImg" src="/assets/img/term.jpg" alt="">
+                </div>
 
                 <div class="rightTitle">
                     <h2 class="title">Выбор редакции</h2>
@@ -302,11 +310,13 @@ include "include/modals/header.php"
                 <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все новости редакции</a>
                 </div>
-                <img class="advImg" src="/assets/img/wms.jpg" alt="">
+                <div class="newsImg">
+                    <img class="rybbuImg" src="/assets/img/wms.jpg" alt="">
+                </div>
 
                 <div class="hearing">
                     <div class="hearingImg">
-                        <img src="/assets/img/ear.png" alt="">
+                        <img src="/assets/img/svg/ear.svg" alt="">
                     </div>
                     <div class="hearingContent">
                         <a class="close" href="/"></a>
@@ -405,18 +415,18 @@ include "include/modals/header.php"
                     <button class="newsBtn" type="button">подписаться</button>
                 </div>
                 <div class="newsText">
-                    <p>Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
+                    <p class="storyText">Работы принимаются в Музее-усадьбе П.И. Чайковского.<br>
                         Музей-усадьба П.И. Чайковского объявляет конкурс декоративно-прикладного искусства «Подарок
                         Дроссельмейера». По условиям конкурса, готовая работа должна представлять собой куклу-персонаж
-                        одного из балетов П.И. Чайковского:
+                        одного из балетов П.И. Чайковского:<br>
                         Балет «Лебединое озеро»: Одетта - белый лебедь, Одиллия - черный лебедь, принц Зигфрид, Ротбарт
                         - злой волшебник, король и королева. Балет «Щелкунчик»: девочка Мари, Дроссельмейер, Мышиный<br>
-                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.
+                        король, Фея Драже, гусары, паяц, господин Шоколад, господин Чай, Фея Ночи.<br>
                         Балет «Спящая красавица»: Аврора, принц Дезире, добрые феи и злая Фея Карабос, гости на свадьбе:<br>
                         Синяя борода, Кот в сапогах, Золушка, красная шапочка и др. Для участия в конкурсе принимаются
                         только индивидуальные работы. Допускается использование любых материалов. Размер работы должен
-                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).
-                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.
+                        быть не менее 20 см в высоту (необходимо предусмотреть возможность установки куклы на выставке).<br>
+                        Работы принимаются с 1 по 15 декабря по адресу: ул. Чайковского, 117.<br>
                         Справки по телефону: 8-919-919-40-71. </p>
                 </div>
 
@@ -428,30 +438,32 @@ include "include/modals/header.php"
                 </div>
                 <div class="tags d-flex align-items-baseline">
                     <h5 class="title tagTitle">Расскажите друзьям:</h5>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/facebook.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/twitter.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/vk.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/od.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/youtube.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/inst.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/chell.png" alt="">
-                    </a>
-                    <a class="footerIcons" href="/">
-                        <img src="/assets/img/google+.png" alt="">
-                    </a>
+                    <div class="footerIconsParent">
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/fc.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/tw.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/vk.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/od.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/yt.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/inst.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/mail.svg" alt="">
+                        </a>
+                        <a class="footerIcons" href="/">
+                            <img src="/assets/img/social/gl.svg" alt="">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="tags pb-0">
@@ -704,7 +716,7 @@ include "include/modals/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent partParent col-xl-9 d-flex">
+            <div class="yanContent partParent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="title">Новости партнеров</h4>
 
                 <div class="newsConParent d-flex flex-wrap pb-0">
@@ -759,7 +771,7 @@ include "include/modals/header.php"
                             Кирби.</p>
                     </div>
                 </div>
-                <div class="recordingInt line longLine">
+                <div class="recordingInt d-flex line pt-0">
                     <button type="button">загрузить еще</button>
                 </div>
 
@@ -773,7 +785,7 @@ include "include/modals/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-9 d-flex">
+            <div class="yanContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 

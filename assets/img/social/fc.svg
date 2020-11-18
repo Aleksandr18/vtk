@@ -1,0 +1,11 @@
+<svg id="Фэйсбук" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3f64b4;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="12" cy="12" r="12"/>
+  <image x="8" y="4" width="8" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAARCAYAAADg1u3YAAABZUlEQVQokYWPT09TURDFz9w7j/vqC88CaQWbFGoigYVhTcKClQTiQo1L1taF3wC+A2u/gCvX7k1c2jVhQ+ii0Uq11P4JpffOmNf4mrAAT2Y25/ySOUPP33+CqsCQsQc7T14c7m8cpYlbE1ENQX9w7CxG10pb66W9ty+ffYwdP0AmCyBCzK92n4KAQq1SfJOHPki4Hoef3kuTywsFVFceRqVi4TH+6bzV+/rttF2PmC5MfzQpnTV/V6LI2BwYjX0DRF0vmvDqcnoSsSm7yG7lQG0lfT3xYXPipUuqqrhH3O6OGpZosTjvltmaQoaOJ6H3Z3jTEdEun7eu6gAerVcXj5fSeDsDvneGn1uXgw+GaMBzbBtJzM4HeZcf8kGac2y/GANwmjg4NvMGiHOArUmsJUfA2LjIIsi056xsVjzrTgSY/zwBc296F0BEszWUGdO5Bec+2AeBiIoP8ktV+0SUeT0vqgrgL78Gj7sVOd9GAAAAAElFTkSuQmCC"/>
+</svg>

@@ -25,7 +25,7 @@ include "include/modals/header.php"
 ?>
 
 <div class="headL d-flex align-items-center position-relative">
-    <div class="container d-flex justify-content-between align-items-center position-relative">
+    <div class="container con d-flex justify-content-between align-items-center position-relative">
         <div class="cityParent map col-xl-3 col-lg-3 col-md-4">
             <h2 class="title titleCity">Воткинск</h2>
             <a class="cityLink" href="">Выбрать другой город</a>
@@ -52,7 +52,7 @@ include "include/modals/header.php"
     </div>
 
     <div class="hidden">
-        <div class="container">
+        <div class="container hiddCon">
             <div class="hiddenHeader d-flex col-xl-6 align-items-center">
                 <a class="hiddenLink" href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
                 <div class="hiddenTel">
@@ -73,13 +73,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden1"><label for="hidden1">Да</label>
-                            <input type="checkbox" id="hidden2"><label for="hidden2">Нет</label>
-                            <input type="checkbox" id="hidden3"><label for="hidden3">Мне все равно</label>
-                            <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden1"><label for="hidden1"><span>Да</span></label>
+                            <input type="checkbox" id="hidden2"><label for="hidden2"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden3"><label for="hidden3"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden4"><label for="hidden4"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="btnHidden d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -120,22 +120,7 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Заказать видео</a>
 
                         </div>
-                        <div class="progHidden">
-                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
-                            <a class="hiddenLink" href="/">Овен</a>
-                            <a class="hiddenLink" href="/">Телец</a>
-                            <a class="hiddenLink" href="/">Близнецы</a>
-                            <a class="hiddenLink" href="/">Рак</a>
-                            <a class="hiddenLink" href="/">Лев</a>
-                            <a class="hiddenLink" href="/">Дева</a>
-                            <a class="hiddenLink" href="/">Весы</a>
-                            <a class="hiddenLink" href="/">Скорпион</a>
-                            <a class="hiddenLink" href="/">Стрелец</a>
-                            <a class="hiddenLink" href="/">Козерог</a>
-                            <a class="hiddenLink" href="/">Водолей</a>
-                            <a class="hiddenLink" href="/">Рыбы</a>
 
-                        </div>
                         <div class="progHidden">
                             <h4 class="title smallCircle smallCircleOB">Объявления</h4>
                             <a class="hiddenLink" href="/">Сегодня</a>
@@ -160,6 +145,27 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Разместить</a>
 
                         </div>
+
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
+                            <a class="hiddenLink" href="/">Овен</a>
+                            <a class="hiddenLink" href="/">Телец</a>
+                            <a class="hiddenLink" href="/">Близнецы</a>
+                            <a class="hiddenLink" href="/">Рак</a>
+                            <a class="hiddenLink" href="/">Лев</a>
+                            <a class="hiddenLink" href="/">Дева</a>
+                            <a class="hiddenLink" href="/">Весы</a>
+                            <a class="hiddenLink" href="/">Скорпион</a>
+                            <a class="hiddenLink" href="/">Стрелец</a>
+                            <a class="hiddenLink" href="/">Козерог</a>
+                            <a class="hiddenLink" href="/">Водолей</a>
+                            <a class="hiddenLink" href="/">Рыбы</a>
+
+                        </div>
+
+                    </div>
+                    <div class="recHidden">
+                        <img class="recHiddenImg" src="/assets/img/shop.jpg" alt="">
                     </div>
 
                 </div>
@@ -171,13 +177,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden5"><label for="hidden5">Да</label>
-                            <input type="checkbox" id="hidden6"><label for="hidden6">Нет</label>
-                            <input type="checkbox" id="hidden7"><label for="hidden7">Мне все равно</label>
-                            <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden5"><label for="hidden5"><span>Да</span></label>
+                            <input type="checkbox" id="hidden6"><label for="hidden6"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden7"><label for="hidden7"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden8"><label for="hidden8"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -345,7 +351,7 @@ include "include/modals/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -452,7 +458,7 @@ include "include/modals/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -553,7 +559,7 @@ include "include/modals/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -612,7 +618,7 @@ include "include/modals/header.php"
                     <p class="vtvText">18 ноября в 11:45</p>
                 </div>
             </div>
-            <div class="recordingInt line longLine">
+            <div class="recordingInt line d-flex">
                 <button type="button">загрузить еще</button>
             </div>
         </div>
@@ -635,10 +641,10 @@ include "include/modals/header.php"
                         <p>Мы в соц. сетях:</p>
                         <div class="footerIconsParent footerLeftIcon">
                             <a class="footerIcons" href="/">
-                                <img src="/assets/img/vk.png" alt="">
+                                <img src="/assets/img/social/footer/vk.svg" alt="">
                             </a>
                             <a class="footerIcons" href="/">
-                                <img src="/assets/img/youtube.png" alt="">
+                                <img src="/assets/img/social/footer/yt.svg" alt="">
                             </a>
                         </div>
                         <div class="footerLinks w-100 d-flex">
@@ -659,40 +665,42 @@ include "include/modals/header.php"
                             Портал не предоставляет справочной информации.
                         </p>
                     </div>
-                    <div class="footerImg">
+                    <div class="footerImgParent">
 
-                        <img src="/assets/img/footerImg.png" alt="">
+                        <img class="footerImg" src="/assets/img/footerImg.png" alt="">
                     </div>
                 </div>
 
 
                 <div class="footerLinksParent">
+
                     <div class="footerIconsParent">
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/facebook.png" alt="">
+                            <img src="/assets/img/social/footer/fc.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/twitter.png" alt="">
+                            <img src="/assets/img/social/footer/tw.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/vk.png" alt="">
+                            <img src="/assets/img/social/footer/vk.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/od.png" alt="">
+                            <img src="/assets/img/social/footer/od.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/youtube.png" alt="">
+                            <img src="/assets/img/social/footer/yt.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/inst.png" alt="">
+                            <img src="/assets/img/social/footer/inst.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/chell.png" alt="">
+                            <img src="/assets/img/social/footer/mail.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/google+.png" alt="">
+                            <img src="/assets/img/social/footer/google.svg" alt="">
                         </a>
                     </div>
+
                     <div class="footerText footerRight">
                         <p>2010-2016. Воткинск.NET - информационно-развлекательный портал
                             Разработано в студии <a class="recordingAlllink" href="/">Web. Master. Studio.</a>

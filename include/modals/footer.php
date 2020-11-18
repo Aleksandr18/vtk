@@ -2,7 +2,7 @@
     <div class="container">
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
-            <div class="footerContent col-xl-9 d-flex">
+            <div class="footerContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <div class="footerLinksParent pt-0">
                     <div class="footerText">
                         <p>Воткинск.NET - информационно-развлекательный портал
@@ -22,28 +22,28 @@
                 <div class="footerLinksParent">
                     <div class="footerIconsParent">
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/facebook.png" alt="">
+                            <img src="/assets/img/social/footer/fc.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/twitter.png" alt="">
+                            <img src="/assets/img/social/footer/tw.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/vk.png" alt="">
+                            <img src="/assets/img/social/footer/vk.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/od.png" alt="">
+                            <img src="/assets/img/social/footer/od.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/youtube.png" alt="">
+                            <img src="/assets/img/social/footer/yt.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/inst.png" alt="">
+                            <img src="/assets/img/social/footer/inst.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/chell.png" alt="">
+                            <img src="/assets/img/social/footer/mail.svg" alt="">
                         </a>
                         <a class="footerIcons" href="/">
-                            <img src="/assets/img/google+.png" alt="">
+                            <img src="/assets/img/social/footer/google.svg" alt="">
                         </a>
                     </div>
                     <div class="footerText footerRight">

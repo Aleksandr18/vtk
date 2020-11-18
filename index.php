@@ -38,7 +38,7 @@ include "include/modals/header.php"
         </div>
         <nav class="nav col-xl-6 col-lg-6 col-md-8">
             <ul class="menu">
-                <li><a class="link" href="/">Новости</a></li>
+                <li><a class="link" href="news.php">Новости</a></li>
                 <li><a class="link" href="/">Объявления</a></li>
                 <li><a class="link" href="/">Афиша</a></li>
                 <li><a class="link" href="/">Люди</a></li>
@@ -60,7 +60,7 @@ include "include/modals/header.php"
     </div>
 
     <div class="hidden">
-        <div class="container">
+        <div class="container hiddCon">
             <div class="hiddenHeader d-flex col-xl-6 align-items-center">
                 <a class="hiddenLink" href="/">Размещение рекламы КРУГЛОСУТОЧНО</a>
                 <div class="hiddenTel">
@@ -81,13 +81,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden1"><label for="hidden1">Да</label>
-                            <input type="checkbox" id="hidden2"><label for="hidden2">Нет</label>
-                            <input type="checkbox" id="hidden3"><label for="hidden3">Мне все равно</label>
-                            <input type="checkbox" id="hidden4"><label for="hidden4">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden1"><label for="hidden1"><span>Да</span></label>
+                            <input type="checkbox" id="hidden2"><label for="hidden2"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden3"><label for="hidden3"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden4"><label for="hidden4"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="btnHidden d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -128,22 +128,7 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Заказать видео</a>
 
                         </div>
-                        <div class="progHidden">
-                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
-                            <a class="hiddenLink" href="/">Овен</a>
-                            <a class="hiddenLink" href="/">Телец</a>
-                            <a class="hiddenLink" href="/">Близнецы</a>
-                            <a class="hiddenLink" href="/">Рак</a>
-                            <a class="hiddenLink" href="/">Лев</a>
-                            <a class="hiddenLink" href="/">Дева</a>
-                            <a class="hiddenLink" href="/">Весы</a>
-                            <a class="hiddenLink" href="/">Скорпион</a>
-                            <a class="hiddenLink" href="/">Стрелец</a>
-                            <a class="hiddenLink" href="/">Козерог</a>
-                            <a class="hiddenLink" href="/">Водолей</a>
-                            <a class="hiddenLink" href="/">Рыбы</a>
 
-                        </div>
                         <div class="progHidden">
                             <h4 class="title smallCircle smallCircleOB">Объявления</h4>
                             <a class="hiddenLink" href="/">Сегодня</a>
@@ -168,6 +153,27 @@ include "include/modals/header.php"
                             <a class="hiddenLink" href="/">Разместить</a>
 
                         </div>
+
+                        <div class="progHidden">
+                            <h4 class="title smallCircle smallCircleVak">Гороскоп</h4>
+                            <a class="hiddenLink" href="/">Овен</a>
+                            <a class="hiddenLink" href="/">Телец</a>
+                            <a class="hiddenLink" href="/">Близнецы</a>
+                            <a class="hiddenLink" href="/">Рак</a>
+                            <a class="hiddenLink" href="/">Лев</a>
+                            <a class="hiddenLink" href="/">Дева</a>
+                            <a class="hiddenLink" href="/">Весы</a>
+                            <a class="hiddenLink" href="/">Скорпион</a>
+                            <a class="hiddenLink" href="/">Стрелец</a>
+                            <a class="hiddenLink" href="/">Козерог</a>
+                            <a class="hiddenLink" href="/">Водолей</a>
+                            <a class="hiddenLink" href="/">Рыбы</a>
+
+                        </div>
+
+                    </div>
+                    <div class="recHidden">
+                        <img class="recHiddenImg" src="/assets/img/shop.jpg" alt="">
                     </div>
 
                 </div>
@@ -179,13 +185,13 @@ include "include/modals/header.php"
                             быть занесенной на Доску
                             Почета:</p>
                         <div class="hiddenIn">
-                            <input type="checkbox" id="hidden5"><label for="hidden5">Да</label>
-                            <input type="checkbox" id="hidden6"><label for="hidden6">Нет</label>
-                            <input type="checkbox" id="hidden7"><label for="hidden7">Мне все равно</label>
-                            <input type="checkbox" id="hidden8"><label for="hidden8">Свой вариант (в
-                                комментариях)</label>
+                            <input type="checkbox" id="hidden5"><label for="hidden5"><span>Да</span></label>
+                            <input type="checkbox" id="hidden6"><label for="hidden6"><span>Нет</span></label>
+                            <input type="checkbox" id="hidden7"><label for="hidden7"><span>Мне все равно</span></label>
+                            <input type="checkbox" id="hidden8"><label for="hidden8"><span>Свой вариант (в
+                                комментариях)</span></label>
                         </div>
-                        <div class="d-flex">
+                        <div class="btnHidden d-flex flex-wrap">
                             <button type="button" class="presentBtn">Голосовать</button>
                             <button type="button" class="presentBtn">все опросы</button>
                         </div>
@@ -256,8 +262,9 @@ include "include/modals/header.php"
                 <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все записи в блогах</a>
                 </div>
-                <img class="advImg" src="/assets/img/term.jpg" alt="">
-
+                <div class="newsImg">
+                    <img class="rybbuImg" src="/assets/img/term.jpg" alt="">
+                </div>
                 <div class="rightTitle">
                     <h2 class="title">Выбор редакции</h2>
                 </div>
@@ -306,11 +313,13 @@ include "include/modals/header.php"
                 <div class="recording pl-0">
                     <a class="recordingAlllink" href="/">все новости редакции</a>
                 </div>
-                <img class="advImg" src="/assets/img/wms.jpg" alt="">
+                <div class="newsImg">
+                    <img class="rybbuImg" src="/assets/img/wms.jpg" alt="">
+                </div>
 
                 <div class="hearing">
                     <div class="hearingImg">
-                        <img src="/assets/img/ear.png" alt="">
+                        <img src="/assets/img/svg/ear.svg" alt="">
                     </div>
                     <div class="hearingContent">
                         <a class="close" href="/"></a>
@@ -370,20 +379,20 @@ include "include/modals/header.php"
 
             </div>
             <div class="middle col-xl-6">
-                <div class="cal d-flex justify-content-between">
-                    <p class="calText">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
+                <div class="cal d-flex justify-content-between flex-wrap align-items-baseline">
+                    <p class="calText calToday">Сегодня 11:42 <a class="calLink" href="/">Вчера</a></p>
 
                     <button type="button" class="chillLink pal">хочу отдохнуть</button>
                 </div>
                 <div class="rad">
-                    <input type="checkbox" id="1"><label for="1">все</label>
-                    <input type="checkbox" id="2"><label for="2">новости</label>
-                    <input type="checkbox" id="3"><label for="3">афиша</label>
-                    <input type="checkbox" id="4"><label for="4">втв</label>
-                    <input type="checkbox" id="5"><label for="5">кино</label>
-                    <input type="checkbox" id="6"><label for="6">концерты</label>
-                    <input type="checkbox" id="7"><label for="7">выставки</label>
-                    <input type="checkbox" id="8"><label for="8">кафе</label>
+                    <input type="checkbox" id="1"><label for="1"><span>все</span></label>
+                    <input type="checkbox" id="2"><label for="2"><span>новости</span></label>
+                    <input type="checkbox" id="3"><label for="3"><span>афиша</span></label>
+                    <input type="checkbox" id="4"><label for="4"><span>втв</span></label>
+                    <input type="checkbox" id="5"><label for="5"><span>кино</span></label>
+                    <input type="checkbox" id="6"><label for="6"><span>концерты</span></label>
+                    <input type="checkbox" id="7"><label for="7"><span>выставки</span></label>
+                    <input type="checkbox" id="8"><label for="8"><span>кафе</span></label>
                 </div>
 
                 <div class="news">
@@ -617,12 +626,12 @@ include "include/modals/header.php"
                         <div class="peopleStruct">
                             <div class="peopleInfo">
                                 <h2 class="title">Наши люди</h2>
-                                <img class="peopleImg" src="assets/img/people1.jpg" alt="">
+                                <img class="peopleImg" src="assets/img/chell1.png" alt="">
                                 <div class="owlBlock">
                                     <h6 class="title">Юрий Бычков</h6>
                                     <p class="peopleText">Депутат ГосСовета Юрий Бычков отвечает
-                                        на вопросы горожан в программе
-                                        «Юрий Бычков отвечает».</p>
+                                        на вопросы горожан в программе</p>
+                                    <p class="peopleText">«Юрий Бычков отвечает».</p>
                                     <a class="peopleLink" href="/">узнать больше</a>
                                     <a class="peopleLink" href="/">узнать о других</a>
                                 </div>
@@ -786,35 +795,35 @@ include "include/modals/header.php"
         <div class="blocks d-flex">
             <div class="left col-xl-3"></div>
 
-            <div class="yanContent col-xl-9 d-flex">
+            <div class="yanContent col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex">
                 <h4 class="yanTitle">Яндекс.Директ</h4>
                 <a class="close" href="/"></a>
 
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
+                    <p class="rec">реклама</p>
+                    <a href="/" class="transLink"></a>
+                </div>
+                <div class="yanText">
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
                     <p>Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
                 <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
-                    <p class="rec">реклама</p>
-                    <a href="/" class="transLink"></a>
-                </div>
-                <div class="yanText">
-                    <p>Горячие столы!</p>
-                    <p>Столы оптом и в розницу.</p>
-                    <p>Бесплатная доставка.</p>
+                    <p class="textYan">Горячие столы!</p>
+                    <p class="textYan">Столы оптом и в розницу.</p>
+                    <p class="textYan">Бесплатная доставка.</p>
                     <p class="rec">реклама</p>
                     <a href="/" class="transLink"></a>
                 </div>
@@ -824,7 +833,7 @@ include "include/modals/header.php"
 </div>
 
 <?php
-include "include/modals/footer.php"
+    include "include/modals/footer.php"
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

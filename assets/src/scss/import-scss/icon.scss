@@ -17,9 +17,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/mapIcon.png");
+    background-image: url("../img/svg/map.svg");
     background-repeat: no-repeat;
-    padding: 16px;
+    width: 29px;
+    height: 33px;
   }
 }
 
@@ -27,15 +28,17 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/doll.png");
+    background-image: url("/assets/img/svg/doll.svg");
     background-repeat: no-repeat;
-    background-size: 90% 85%;
+    background-size: auto;
     background-position: center;
-    padding: 0 11px;
-    margin-right: 6px;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 21px;
+    margin-left: -26px;
   }
 
 }
@@ -44,15 +47,16 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/euro.png");
+    background-image: url("/assets/img/svg/eu.svg");
     background-repeat: no-repeat;
-    background-size: 70% 80%;
+    background-size: auto;
     background-position: center;
-    padding: 0 11px;
-    margin-right: 6px;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    width: 20px;
+    position: absolute;
+    height: 21px;
+    margin-left: -27px;
   }
 
 }
@@ -60,52 +64,67 @@
 .neft {
   &:before {
     content: "";
-    background-image: url("/assets/img/neft1.png");
+    background-image: url("/assets/img/svg/neft.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
     padding: 0 11px;
     margin-right: 6px;
+    background-position: center;
     border-radius: 50%;
     background-color: #dedede;
-    margin-left: 11px;
+    width: 20px;
+    position: absolute;
+    height: 21px;
+    margin-left: -27px;
   }
 }
 
 .arrowDown {
   &:after {
     content: "";
-    background-image: url("/assets/img/arrowDown.png");
+    background-image: url(/assets/img/arrowDown.png);
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 5px;
     position: absolute;
     top: 6px;
+    width: 7px;
+    height: 11px;
     margin-left: 10px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }
 
 .arrowTop {
   &:after {
     content: "";
-    background-image: url("/assets/img/arrowTop.png");
+    background-image: url(/assets/img/arrowTop.png);
+    padding: 5px;
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 5px;
     position: absolute;
     top: 6px;
+    width: 7px;
+    height: 11px;
     margin-left: 10px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
   }
 }
 
 .glasses {
   &:before {
     content: "";
-    background-image: url("../img/glasses.png");
+    background-image: url("/assets/img/svg/gl.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 90% 100%;
-    padding: 0 13.5px;
+    padding: 0 13px;
     margin-right: 8px;
 
     @media (max-width: 540px) {
@@ -117,12 +136,27 @@
 .search {
   &:before {
     content: "";
-    background-image: url("../img/search.png");
+    background-image: url("/assets/img/svg/search.svg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 90% 100%;
+    background-size: auto;
     padding: 0 12px;
     margin-right: 21px;
+
+    @media (max-width: 540px) {
+      display: none;
+    }
+  }
+}
+
+.calLink {
+  &:after {
+    content: "";
+    background-image: url("/assets/img/svg/call.svg");
+    background-size: auto;
+    padding: 4px 12px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -130,7 +164,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/pal.png");
+    background-image: url("/assets/img/svg/palm.svg");
     background-repeat: no-repeat;
     padding: 2px 13px;
   }
@@ -140,10 +174,23 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/camera.png");
+    background-image: url("/assets/img/svg/cam.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 0 10px;
+    background-size: auto;
+    padding: 0 15px;
+  }
+}
+
+.userName {
+  &:before {
+    content: "";
+    background-image: url("/assets/img/svg/user.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 11px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 5px;
   }
 }
@@ -162,27 +209,39 @@
 
 .eye {
 
+  margin-left: 26px;
+
   &:before {
     content: "";
-    background-image: url("/assets/img/eye.png");
+    background-image: url("/assets/img/svg/eye.svg");
     margin-right: 3px;
     background-size: auto;
     background-repeat: no-repeat;
-    padding: 0 12px;
-    font-size: 10px;
+    font-size: 12px;
+    width: 23px;
+    height: 13px;
+    position: absolute;
+    top: 3px;
+    margin-left: -27px;
   }
 }
 
 .comm {
 
+  margin-left: 26px;
+  position: relative;
+
   &:before {
     content: "";
-    background-image: url("/assets/img/comm.png");
+    background-image: url("/assets/img/svg/comm.svg");
     background-size: auto;
     background-repeat: no-repeat;
-    padding: 0 9px;
     font-size: 12px;
-    margin-left: 13px;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    top: 2px;
+    margin-left: -18px;
   }
 }
 
@@ -221,7 +280,7 @@
 
   &:after {
     content: "";
-    background-image: url("/assets/img/mobIcon.png");
+    background-image: url("/assets/img/social/footer/tel.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6px 15px;
@@ -238,7 +297,6 @@
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: -1;
 
     @media (max-width: 540px) {
       width: 27%;
@@ -253,7 +311,6 @@
     position: absolute;
     top: 50%;
     right: 0;
-    z-index: -1;
 
     @media (max-width: 540px) {
       width: 27%;
@@ -272,7 +329,8 @@
     display: inline-block;
     height: 10px;
     border-right: 1px solid $labelColor;
-    margin-left: 11px;
+    margin-left: 17px;
+    margin-right: 11px;
     transform: rotate(45deg);
 
   }

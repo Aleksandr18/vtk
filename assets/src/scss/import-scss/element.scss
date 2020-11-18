@@ -1,4 +1,3 @@
-
 header {
   display: flex;
   width: 100%;
@@ -8,6 +7,10 @@ header {
   z-index: 100;
   overflow: hidden;
   height: 80px;
+
+  @media (max-width: 991px) {
+    height: auto;
+  }
 }
 
 .block {
@@ -15,6 +18,10 @@ header {
   position: relative;
   line-height: 0;
   width: 100%;
+
+  @media (max-width: 991px) {
+    padding-top: 10%;
+  }
 
 
   &:after {
@@ -26,9 +33,13 @@ header {
     top: 0;
     left: 0;
     background: transparent;
-    background-image: linear-gradient(to right, #0b2a30, transparent, #0b2a30);
+    background-image: linear-gradient(to right, #0b2a30, transparent, #0b2a30), linear-gradient(to right, #0b2a30, transparent, #0b2a30);
     opacity: 1;
     z-index: 2;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
 }
@@ -52,16 +63,31 @@ header {
   &:nth-child(3) {
     right: -14%;
   }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    right: 0 !important;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+
+    &:nth-child(odd) {
+      display: none;
+    }
+  }
 }
 
 .headS {
   border-bottom: 1px solid #d8d8d8;
 }
 
+
 .travel {
-  max-width: 630px;
+  max-width: 693px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
   position: relative;
   @media (max-width: 760px) {
     display: none;
@@ -86,7 +112,7 @@ header {
   top: 10%;
   left: 15%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     font-size: 24px;
   }
 }
@@ -100,7 +126,7 @@ header {
   left: 15%;
   font-family: $chillFont;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     font-size: 16px;
   }
 }
@@ -110,19 +136,7 @@ header {
   position: relative;
   line-height: 0;
   width: 100%;
-  padding-top: 15%;
-
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent;
-    background-image: linear-gradient(to right, #fff, transparent, #fff);
-  }
+  padding-top: 12%;
 }
 
 .otLink {
@@ -130,13 +144,16 @@ header {
   text-shadow: none;
   position: relative;
 
-
 }
 
 .versionLink {
   color: $black;
-  margin-right: 21px;
+  margin-right: 20px;
+  font-size: 14px;
 
+  @media (max-width: 540px) {
+    margin-right: 0;
+  }
 }
 
 .sign {
@@ -155,6 +172,10 @@ header {
   width: 100%;
   padding: 0;
   padding-left: 50px;
+
+  .title {
+    text-align: left;
+  }
 }
 
 .cityLink {
@@ -172,13 +193,13 @@ header {
   position: relative;
   padding-right: 62px;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     position: absolute;
     right: 0;
   }
 
   .menu {
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       display: none;
     }
   }
@@ -256,8 +277,9 @@ header {
   max-width: 321px;
   width: 100%;
   padding: 0;
+  justify-content: space-around;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -265,6 +287,10 @@ header {
 .curseValue {
   margin-right: 20px;
   position: relative;
+
+  &:first-child {
+    margin-left: 20px;
+  }
 
 }
 
@@ -278,15 +304,13 @@ header {
   border-right: 1px solid $line;
   padding: 0;
 
+  .newsImg {
+    padding-top: 100%;
+  }
+
   @media (max-width: 760px) {
     display: none;
   }
-}
-
-.blockTitle {
-  display: flex;
-  height: 76px;
-  align-items: center;
 }
 
 .blockParent {
@@ -294,6 +318,10 @@ header {
   overflow: hidden;
   overflow-y: auto;
   color: $navColor;
+
+  @media (max-width: 1200px) {
+    max-height: none !important;
+  }
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -315,7 +343,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: block;
   }
 
@@ -335,11 +363,12 @@ header {
   width: 100%;
   margin-right: 15px;
   height: 50px;
-  
+
   @media (max-width: 1200px) {
     max-width: none;
     height: auto;
     margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -386,15 +415,17 @@ header {
 }
 
 .recordingLink {
-  font-size: 14px;
+  font-size: 15px;
   max-width: 177px;
   width: 100%;
   font-family: 'Tahoma Regular';
+  line-height: 18px;
 }
 
 .recordingAlllink {
   color: $blue;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 /* middle */
@@ -402,8 +433,9 @@ header {
 .middle {
   max-width: 677px;
   width: 50%;
+  font-family: 'Tahoma';
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 75%;
     padding-right: 0;
   }
@@ -416,7 +448,7 @@ header {
   .blockParent {
     max-height: none;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
       margin: 0 auto;
     }
 
@@ -425,18 +457,19 @@ header {
       flex-wrap: nowrap;
 
       .IntImg {
-        @media (max-width: 990px) {
+        @media (max-width: 991px) {
           max-width: none;
           margin-right: 0;
+          margin-bottom: 15px;
         }
       }
 
-        .intLink {
-          @media (max-width: 990px) {
-            margin: 0 auto;
-            text-align: center;
-          }
+      .intLink {
+        @media (max-width: 991px) {
+          margin: 0 auto;
+          text-align: center;
         }
+      }
     }
 
   }
@@ -451,18 +484,17 @@ header {
   font-size: 13px;
 }
 
+.calToday {
+  @media (max-width: 540px) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
 .calLink {
   color: $black;
   margin-left: 20px;
-
-  &:after {
-    content: "";
-    background-image: url("/assets/img/cal.png");
-    background-size: auto;
-    padding: 4px 12px;
-    margin-left: 20px;
-    background-repeat: no-repeat;
-  }
+  font-weight: 600;
 }
 
 
@@ -475,6 +507,18 @@ header {
   flex-direction: row;
   align-items: baseline;
   padding: 15px 0;
+
+  .title {
+    @media (max-width: 1200px) {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+
 }
 
 input[type="checkbox"] {
@@ -489,10 +533,11 @@ input[type="checkbox"] {
 
 label {
 
-  cursor: default;
+  cursor: pointer;
   color: $labelColor;
   margin-right: 13px;
   margin-bottom: 0;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -508,12 +553,44 @@ label {
     margin-right: 3px;
     color: $black;
   }
+
+  @media (max-width: 760px) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 input:checked + label:before {
-  content: "\2714";
-  font-size: 12px;
   background-color: $blue;
+  position: relative;
+}
+
+input:checked + label span:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 6px;
+  height: 2px;
+  background: $black;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+input:checked + label span:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 11px;
+  height: 2px;
+  background: $black;
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
 
 /* news */
@@ -553,6 +630,7 @@ input:checked + label:before {
     background: rgba(3, 15, 25, 0.6);
     padding: 5px 10px;
     color: $white;
+    justify-content: space-between;
   }
 }
 
@@ -591,8 +669,10 @@ input:checked + label:before {
   }
 }
 
+
 .newsStatEye {
-  margin-right: 15px;
+  position: relative;
+  margin-right: 5px;
 }
 
 .ImgIcon {
@@ -670,10 +750,6 @@ input:checked + label:before {
     background: transparent;
     padding: 0;
     padding-top: 5px;
-    
-    @media (max-width: 990px) {
-      justify-content: center;
-    }
   }
 
 }
@@ -693,6 +769,7 @@ input:checked + label:before {
 
 .intLink {
   max-width: 455px;
+  margin-bottom: 12px;
 }
 
 .statInt {
@@ -734,11 +811,15 @@ input:checked + label:before {
 .peopleInfo {
   display: flex;
   max-width: 645px;
-  padding: 30px;
+  padding: 21px;
+
+  @media (max-width: 540px) {
+    display: block;
+  }
 
   .title {
     font-size: 15px;
-    width: 246px;
+    width: 172px;
   }
 }
 
@@ -746,7 +827,6 @@ input:checked + label:before {
 
 .peopleText {
   font-size: 15px;
-  padding-right: 25px;
 }
 
 .peopleLink {
@@ -754,6 +834,10 @@ input:checked + label:before {
   margin-right: 30px;
   font-size: 15px;
   font-style: normal;
+
+  @media (max-width: 540px) {
+    margin-right: 14px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -774,9 +858,14 @@ input:checked + label:before {
 
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
-  font-size: 85px;
+  font-size: 70px;
   color: $owlColor;
   font-weight: 100;
+  font-family: "Open Sans";
+
+  @media (max-width: 991px) {
+    display: none;
+  }
 }
 
 .owl-carousel .owl-nav.disabled {
@@ -789,13 +878,17 @@ input:checked + label:before {
   border-radius: 100px;
   height: 132px;
   margin-right: 25px;
+
+  @media (max-width: 540px) {
+    margin: 0 auto;
+  }
 }
 
 .owlBlock {
-  margin: auto;
   font-size: 15px;
   font-style: italic;
   font-family: 'Tahoma Regular';
+  margin: auto;
 
   .title {
     font-size: 15px;
@@ -815,7 +908,7 @@ input:checked + label:before {
     max-height: 530px;
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
@@ -848,18 +941,6 @@ input:checked + label:before {
 .userName {
   color: $navColor;
 
-
-  &:before {
-    content: "";
-    background-image: url("/assets/img/user.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 11px;
-    height: 12px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
 }
 
 .advText {
@@ -921,6 +1002,10 @@ input:checked + label:before {
   color: #f63219;
   font-weight: 900;
   letter-spacing: 2px;
+
+  @media (max-width: 1200px) {
+    font-size: 57px;
+  }
 }
 
 .textReg {
@@ -952,14 +1037,12 @@ input:checked + label:before {
 .yanText {
   width: calc(25% - 40px);
   font-size: 15px;
-  margin-bottom: 24px;
   margin-right: 20px;
+  position: relative;
+  font-family: "Tahoma";
+  margin-bottom: 24px;
 
-  &:first-child {
-    padding-left: 15px;
-  }
-
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: calc(50% - 20px);
 
     &:nth-child(2n) {
@@ -976,12 +1059,19 @@ input:checked + label:before {
 
 }
 
+
 .rec {
   font-size: 11px;
-  color: $navColor;
+  color: $labelColor;
 }
 
 /* footer */
+
+footer {
+  @media (max-width: 760px) {
+    background-color: $footerColor;
+  }
+}
 
 
 .footerContent {
@@ -996,8 +1086,9 @@ input:checked + label:before {
   font-size: 11px;
   max-width: 384px;
   width: 50%;
+  line-height: 13px;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -1015,7 +1106,7 @@ input:checked + label:before {
   width: 50%;
   text-align: right;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     text-align: left;
   }
@@ -1029,9 +1120,9 @@ input:checked + label:before {
 .footerIconsParent {
   width: 50%;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
-    margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -1044,6 +1135,10 @@ input:checked + label:before {
   text-align: center;
   margin-right: 10px;
   margin-bottom: 10px;
+
+  &:hover {
+    filter: invert(1);
+  }
 
   &:last-child {
     margin-right: 0;
@@ -1069,8 +1164,9 @@ input:checked + label:before {
   text-align: right;
   max-width: 337px;
   width: 50%;
+  line-height: 15px;
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: 100%;
     max-width: none;
     text-align: left;
@@ -1088,7 +1184,6 @@ input:checked + label:before {
 
 .calNews {
   .calText {
-    margin-left: 12px;
     position: relative;
     font-family: $tahomaFont;
     font-style: italic;
@@ -1114,6 +1209,7 @@ input:checked + label:before {
 
 .autorText {
   padding-left: 15px;
+  font-family: $defaultFont;
 
   .title {
     font-size: 13px !important;
@@ -1131,11 +1227,21 @@ input:checked + label:before {
   margin: 0 14px;
   max-width: 252px;
   width: 100%;
+  margin-bottom: 15px;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+  }
 }
 
 .inVideo {
   max-width: 419px;
   width: 100%;
+  margin-bottom: 15px;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+  }
 }
 
 .newsText {
@@ -1144,18 +1250,40 @@ input:checked + label:before {
   font-size: 15px;
 }
 
+.storyText {
+  max-width: 876px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
 .tags {
   padding: 20px 0;
   border-bottom: 1px solid $line;
-
+  flex-wrap: wrap;
   .title {
     margin-right: 28px;
     font-size: 14px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 
   .tagText {
     margin-right: 20px;
     font-size: 12px;
+  }
+
+  .footerIconsParent {
+    .footerIcons {
+      background-color: transparent;
+
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -1180,16 +1308,16 @@ input:checked + label:before {
     @media (max-width: 1200px) {
       display: block;
     }
-    
+
     @media (max-width: 540px) {
       width: 100%;
       margin-right: 0;
     }
-    
+
 
     .recordingLink {
       max-width: 150px;
-      
+
       @media (max-width: 1200px) {
         text-align: center;
         margin: 0 auto;
@@ -1216,6 +1344,11 @@ input:checked + label:before {
 
 .newsConParent {
   padding: 30px 0;
+  padding-left: 15px;
+
+  @media (max-width: 1200px) {
+    padding-left: 0;
+  }
 
   .recordingInt {
     border: none;
@@ -1228,13 +1361,21 @@ input:checked + label:before {
 }
 
 .newsCon {
-  width: calc(20% - 14px);
-  margin-right: 17px;
+  width: calc(20% - 6px);
+  margin-right: 7px;
   font-size: 13px;
-  max-width: 178px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: 1200px) {
+    width: calc(50% - 20px);
+    text-align: center;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
   }
 
   .newsImg1 {
@@ -1244,7 +1385,7 @@ input:checked + label:before {
   .newsConText {
     font-family: 'Tahoma';
     font-size: 13px;
-    max-width: 173px;
+    line-height: 17px;
   }
 }
 
@@ -1252,7 +1393,7 @@ input:checked + label:before {
 
 .con {
   .rightTitle {
-    @media (max-width:990px) {
+    @media (max-width:991px) {
       display: none;
     }
   }
@@ -1261,9 +1402,11 @@ input:checked + label:before {
 
 .vtvContent {
   padding: 20px 0;
+  flex-wrap: wrap;
 
   .title {
     font-size: 23px;
+    padding-right: 5px;
   }
 
 }
@@ -1274,14 +1417,31 @@ input:checked + label:before {
   background: transparent !important;
   padding: 0 !important;
 
+  @media (max-width: 991px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 540px) {
+    justify-content: center;
+  }
+
   .vtvText {
-    margin-right: 27px;
+    margin-right: 39px;
   }
 
   .newsStatEye {
-    margin-right: 14px;
+    margin-right: 27px;
+  }
+
+  .newsStatComm {
+    margin-right: 27px;
+
+    @media (max-width: 540px) {
+      margin-right: 0;
+    }
   }
 }
+
 
 .commImg {
   max-width: 643px;
@@ -1290,7 +1450,7 @@ input:checked + label:before {
 
 .video {
   padding: 28px 0;
-  border-top: 2px solid $line;
+  border-top: 3px solid $line;
 
   .videoTitle {
     padding-bottom: 25px;
@@ -1349,15 +1509,46 @@ input:checked + label:before {
   width: calc(25% - 47px);
   margin-right: 61px;
   margin-bottom: 40px;
-  max-width: 275px;
 
   &:nth-child(4n) {
     margin-right: 0;
+
+    @media (max-width: 991px) {
+      margin-right: 42px;
+    }
   }
 
-  @media (max-width: 990px) {
-    width: calc(50% - 40px);
+  @media (max-width: 991px) {
+    width: calc(33.33333% - 29px);
+    margin-right: 42px;
 
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    width: calc(50% - 21px);
+    margin-right: 40px;
+
+    &:nth-child(3n) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &:nth-child(2n), &:nth-child(3n) {
+      margin-right: auto;
+    }
   }
 
   .videoImg {
@@ -1395,7 +1586,7 @@ input:checked + label:before {
     width: calc(25% - 40px);
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 991px) {
     width: calc(50% - 20px);
 
     &:nth-child(2n) {
@@ -1423,6 +1614,10 @@ input:checked + label:before {
 /* VTV video */
 
 .leftMiddle {
+
+  @media (max-width: 991px) {
+    padding: 0;
+  }
 
   .video {
     .videoToday {
@@ -1486,15 +1681,16 @@ input:checked + label:before {
     border-top: 1px solid $line;
 
     .recording {
-      width: calc(33.3333% - 7px);
+      width: calc(33.3333% - 51px);
+      margin-right: 50px;
 
       &:last-child {
         margin-right: 0;
       }
 
-      @media (max-width: 990px) {
+      @media (max-width: 991px) {
         width: 100%;
-
+        margin-right: 0;
       }
     }
 
@@ -1529,7 +1725,6 @@ input:checked + label:before {
 .hidden {
   background-color: #f2f2f2;
   width: 100%;
-  height: 620px;
   display: none;
   position: absolute;
   top: 0;
@@ -1544,19 +1739,26 @@ input:checked + label:before {
 
     .left {
       padding-top: 44px;
-      padding-right: 25px;
       border-bottom: 1px solid $line;
     }
 
     .right {
       padding-top: 20px;
       padding-right: 25px;
+      padding-bottom: 20px;
     }
 
     .presentBtn {
       margin-bottom: 25px;
       padding: 6.5px 26.5px;
+      font-size: 13px;
     }
+  }
+}
+
+.hiddCon {
+  @media (max-width: 760px) {
+    padding: 0 !important;
   }
 }
 
@@ -1566,24 +1768,42 @@ input:checked + label:before {
 
 .hiddenHeader {
   margin: 0 auto;
-  height: 60px;
+  height: 57px;
   max-width: 677px;
   width: 50%;
+  padding-right: 62px;
 
+  @media (max-width: 991px) {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 12px;
+    justify-content: space-around;
+  }
 }
 
 .hiddenTel {
   max-width: 148px;
   margin: 0 25px;
+
+  @media (max-width: 540px) {
+    display: none;
+  }
 }
 
 .hiddenLink {
-  color: $navColor;
+  color: $labelColor;
 }
 
 /* hiddenLeft*/
 
 .Opros {
+
+  border-bottom: 1px solid $line;
+
   .title {
     color: $blue;
     margin-bottom: 15px;
@@ -1597,6 +1817,15 @@ input:checked + label:before {
   .hiddenIn {
     margin-bottom: 20px;
   }
+
+  .hiddenImg {
+    max-width: 120px;
+    width: 100%;
+    height: 91px;
+    display: block;
+    margin-left: auto;
+    margin-right: 28px;
+  }
 }
 
 .hiddenText {
@@ -1609,30 +1838,103 @@ input:checked + label:before {
 
 .hiddenIn {
   display: grid;
+
+  label {
+    &:before {
+      transform: rotate(45deg);
+      margin-right: 12px;
+    }
+  }
+}
+
+.progHiddenParent {
+  position: relative;
+  width: 100%;
+  height: 286px;
+
+  @media (max-width: 1200px) {
+    height: auto;
+  }
 }
 
 .progHidden {
-  max-width: 170px;
   border-right: 1px solid $line;
   border-bottom: 1px solid $line;
-  padding: 25px 23px;
-  width: 25%;
+  padding-left: 23px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 25.1%;
+  height: 169px;
+
+  &:nth-child(3n+3),&:nth-child(3n+4),&:nth-child(3n+5) {
+    height: 120px;
+  }
+
+  &:nth-child(6) {
+    margin-top: -49px;
+    height: 169px;
+  }
+
+  &:last-child {
+    position: absolute;
+    height: 289px;
+    right: 0;
+  }
+
+
+
+  @media (max-width: 1200px) {
+    position: static;
+
+    &:nth-child(odd) {
+      width: 40%;
+    }
+
+    &:nth-child(even) {
+      width: 35%;
+      margin: 0;
+    }
+
+    &:nth-child(6) {
+      height: 120px;
+    }
+
+    &:last-child {
+      width: 25%;
+    }
+
+    @media (max-width: 540px) {
+      width: 100% !important;
+      position: static !important;
+      text-align: center;
+    }
+
+
+  }
+
+
   .title {
     font-size: 13px;
   }
 
   .hiddenLink {
-    font-size: 12px;
+    font-size: 11px;
     display: block;
+
+    @media (max-width: 540px) {
+      font-size: 12px;
+    }
   }
 }
 
 .HiddenOpPres {
   padding-left: 28px;
   position: relative;
+  border-top: 1px solid $line;
+  padding-top: 10px;
 
   .hiddenText {
-    max-width: 170px;
+    max-width: 190px;
     margin-left: 15px;
     margin-bottom: 12px;
     font-weight: 400;
@@ -1640,7 +1942,17 @@ input:checked + label:before {
 
   .presentBtn {
     padding: 6.5px 18px;
+    margin-bottom: 0 !important;
   }
+}
+
+.recHidden {
+  padding: 25px 17px;
+}
+
+.recHiddenImg {
+  max-width: 645px;
+  width: 100%;
 }
 
 /* hidden Right */

@@ -1,3 +1,4 @@
+
 button {
   background-color: transparent;
   font-size: 13px;
@@ -6,10 +7,10 @@ button {
   border-radius: 5px;
   padding: 6.5px 17.5px;
   color: $navColor;
-  border: 1px solid transparent;
+  border: 1px solid $line;
 
   &:hover {
-    border: 1px solid $line;
+    border: 1px solid transparent;
   }
 }
 
@@ -33,6 +34,10 @@ button {
     background-color: #ecf16b;
     border: 1px solid transparent;
   }
+
+  @media (max-width: 540px) {
+    margin: 0 auto;
+  }
 }
 
 .videoLink {
@@ -40,6 +45,7 @@ button {
   background-color: #038fbf;
   text-shadow: none;
   font-weight: 400;
+  max-width: 150px;
 
   &:hover {
     background-color: #ecf16b;
@@ -50,10 +56,10 @@ button {
 .presentBtn {
   color: $blue;
   padding: 6.5px 29.5px;
-  border: 1px solid transparent;
+  border: 1px solid $blue;
 
   &:hover {
-    border: 1px solid $blue;
+    border: 1px solid transparent;
   }
 }
 
@@ -63,12 +69,3 @@ button {
   color: $white;
   border-radius: 3px;
 }
-
-.hiddenImg {
-  max-width: 120px;
-  width: 100%;
-  height: 91px;
-  float: right;
-
-}
-
