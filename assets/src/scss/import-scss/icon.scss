@@ -5,7 +5,7 @@
     border-radius: 50%;
     position: absolute;
     padding: 8.5px;
-    background-image: url("/assets/img/circle.png");
+    background-image: url("../img/circle.png");
     bottom: 5px;
     margin-left: 7px;
   }
@@ -28,7 +28,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/doll.svg");
+    background-image: url("../img/svg/doll.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -47,7 +47,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/eu.svg");
+    background-image: url("../img/svg/eu.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -64,7 +64,7 @@
 .neft {
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/neft.svg");
+    background-image: url("../img/svg/neft.svg");
     background-repeat: no-repeat;
     background-size: auto;
     padding: 0 11px;
@@ -82,7 +82,7 @@
 .arrowDown {
   &:after {
     content: "";
-    background-image: url(/assets/img/arrowDown.png);
+    background-image: url("../img/arrowDown.png");
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
@@ -100,7 +100,7 @@
 .arrowTop {
   &:after {
     content: "";
-    background-image: url(/assets/img/arrowTop.png);
+    background-image: url("../img/arrowTop.png");
     padding: 5px;
     background-repeat: no-repeat;
     background-size: auto;
@@ -120,7 +120,7 @@
 .glasses {
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/gl.svg");
+    background-image: url("../img/svg/gl.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 90% 100%;
@@ -136,7 +136,7 @@
 .search {
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/search.svg");
+    background-image: url("../img/svg/search.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto;
@@ -152,7 +152,7 @@
 .calLink {
   &:after {
     content: "";
-    background-image: url("/assets/img/svg/call.svg");
+    background-image: url("../img/svg/call.svg");
     background-size: auto;
     padding: 4px 12px;
     margin-left: 20px;
@@ -164,7 +164,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/palm.svg");
+    background-image: url("../img/svg/palm.svg");
     background-repeat: no-repeat;
     padding: 2px 13px;
   }
@@ -174,7 +174,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/cam.svg");
+    background-image: url("../img/svg/cam.svg");
     background-repeat: no-repeat;
     background-size: auto;
     padding: 0 15px;
@@ -184,7 +184,7 @@
 .userName {
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/user.svg");
+    background-image: url("../img/svg/user.svg");
     background-repeat: no-repeat;
     background-size: auto;
     width: 11px;
@@ -213,7 +213,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/eye.svg");
+    background-image: url("../img/svg/eye.svg");
     margin-right: 3px;
     background-size: auto;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@
 
   &:before {
     content: "";
-    background-image: url("/assets/img/svg/comm.svg");
+    background-image: url("../img/svg/comm.svg");
     background-size: auto;
     background-repeat: no-repeat;
     font-size: 12px;
@@ -280,7 +280,7 @@
 
   &:after {
     content: "";
-    background-image: url("/assets/img/social/footer/tel.svg");
+    background-image: url("../img/social/footer/tel.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6px 15px;
@@ -378,7 +378,7 @@
 .vkIcon {
   &:after {
     content: "";
-    background-image: url("/assets/img/vkicon.png");
+    background-image: url("../img/vkicon.png");
     background-repeat: no-repeat;
     padding: 0 10px;
     background-size: auto;
@@ -438,7 +438,7 @@
 .presentBox {
   &:before {
     content: "";
-    background-image: url("/assets/img/present.png");
+    background-image: url("../img/present.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: left;
