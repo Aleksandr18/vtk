@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7b05c8-a5a1-444f-b0a8-81660fb10ca3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/src/scss/import-scss/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/scss/import-scss/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/src/scss/import-scss/element.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/scss/import-scss/element.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/src/scss/import-scss/icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/scss/import-scss/icon.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/src/scss/import-scss/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/scss/import-scss/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/src/scss/import-scss/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/scss/import-scss/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/modals/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/modals/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/modals/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/modals/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vtvMain.php" beforeDir="false" afterPath="$PROJECT_DIR$/vtvMain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vtvVideo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vtvVideo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votkinskCSS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/votkinskHTML.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +55,7 @@
       <workItem from="1605474009606" duration="1311000" />
       <workItem from="1605629214919" duration="1808000" />
       <workItem from="1605648936726" duration="1797000" />
-      <workItem from="1605680135948" duration="340000" />
+      <workItem from="1605680135948" duration="1671000" />
     </task>
     <servers />
   </component>
