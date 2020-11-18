@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     document.querySelector('.menu-btn').addEventListener('click', function(){
@@ -9,9 +8,10 @@ $(document).ready(function () {
         document.querySelector('.hidden').classList.toggle('openH');
     });
 
+    document.querySelector('.close').addEventListener('click', function () {
+        document.querySelector('.hearing').classList.toggle('closeBlock');
+    })
 
-
-    const menuBtnBurger = document.querySelector('.menu-btn__burger');
 
     $('.owl-people').owlCarousel({
         loop: true,
@@ -19,7 +19,6 @@ $(document).ready(function () {
         autoplayTimeout : 7000,
         margin: 24,
         nav: true,
-        responsiveClass: true,
         items: 1
     });
 });

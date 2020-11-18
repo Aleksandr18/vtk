@@ -377,7 +377,7 @@ header {
 .hearing {
   position: absolute;
   width: 350px;
-  z-index: 2;
+  z-index: 3;
   top: 27%;
   -webkit-transform: translateY(-27%);
   -moz-transform: translateY(-27%);
@@ -398,6 +398,10 @@ header {
   }
 }
 
+.closeBlock {
+  display: none;
+}
+
 .hearingContent {
   margin-left: 13px;
   color: $navColor;
@@ -406,8 +410,8 @@ header {
     top: 16px;
     right: 13px;
   }
-
 }
+
 
 .advImg {
   width: 100%;
@@ -943,7 +947,7 @@ input:checked + label span:after {
 
 }
 
-.advText {
+.recordingText {
   max-width: 229px;
 }
 
