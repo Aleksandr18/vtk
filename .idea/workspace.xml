@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7b05c8-a5a1-444f-b0a8-81660fb10ca3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votkinskCSS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/votkinskHTML.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Odigo.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vtk.local" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,7 +54,7 @@
       <workItem from="1605474009606" duration="1311000" />
       <workItem from="1605629214919" duration="1808000" />
       <workItem from="1605648936726" duration="1797000" />
-      <workItem from="1605680135948" duration="1671000" />
+      <workItem from="1605680135948" duration="3226000" />
     </task>
     <servers />
   </component>
@@ -67,10 +66,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604145220104" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604848507427">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605683202040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604848507427" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605683202040" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1604755883227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
